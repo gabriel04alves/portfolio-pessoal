@@ -176,3 +176,45 @@
     text-align: center;
     font-size: 2rem;
   }
+
+  /* <section formation> */
+  .academic-education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 5%;
+    gap: 5vh;
+    background-color: #EAF2FD;
+    color: #464646;
+  }
+  .container-academic-formation {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 8vh;
+    max-width: 65vw;
+  }
+  .academic-formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+  .container-image-academic-formation {
+    background-color: #FFF;
+    padding: 2vh 5vw;
+  }
+  .image {
+    width: 10rem;
+  }
+  .title-academic-education {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .formation-text, .status-formation {
+    text-align: center;
+    margin: 0 0 1vh 0;
+    width: 15vw;
+    font-size: 1.1rem;
+  }
