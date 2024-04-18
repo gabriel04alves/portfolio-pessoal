@@ -233,3 +233,21 @@
       padding: 5%;
     }
   }
+
+  /* <section contacts> */
+  .section-contacts {
+    padding: 5%;
+    display: flex;
+    flex-flow: column;
+    gap: 2vh;
+  }
+  .container-contact-title {
+    font-size: 1.8rem;
+    color: #464646;
+  }
+  .option-contact {
+    display: flex;
+    gap: 1vw;
+    font-size: 1.3rem;
+    margin: 1.2vh 0 0 0;
+  }
