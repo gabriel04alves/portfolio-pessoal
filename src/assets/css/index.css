@@ -29,10 +29,19 @@
   }
   
   .list-header a {
-    color: #464646;
     text-decoration: none;
     font-size: 1.2rem;
+    color: #464646;
 
+    height: 5vh;
+
+    transition: transform 0.3s ease;
+  }
+
+  .list-header a:hover {
+    transform: translate(-0.5vh, -0.5vh);
+    color: #1c1c1c;
+    font-weight: 600;
   }
 
   .menu-desktop {
@@ -71,7 +80,15 @@
     gap: 2vw;
     font-size: 1rem;
   }
-  
+  .options-presentation a {
+    height: max-content;
+    width: max-content;
+    transition: transform 0.3s ease;
+  }
+  .options-presentation a:hover {
+    transform: translate(0.5vh, 0.5vh);
+    height: 1vh;
+  }
   .title-presentation {
     font-size: 2rem;
   }
@@ -250,6 +267,14 @@
     gap: 1vw;
     font-size: 1.3rem;
     margin: 1.2vh 0 0 0;
+    transition: transform 0.3s ease;
+    height: 3vh;
+  }
+  .option-contact a {
+    height: 3vh;
+  }
+  .option-contact:hover {
+    transform: translate(0.5vh, -0.5vh);
   }
   @media (min-width: 600px) {
     .section-contacts {
