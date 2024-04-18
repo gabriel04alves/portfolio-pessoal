@@ -236,7 +236,7 @@
 
   /* <section contacts> */
   .section-contacts {
-    padding: 5%;
+    padding: 15%;
     display: flex;
     flex-flow: column;
     gap: 2vh;
@@ -250,4 +250,24 @@
     gap: 1vw;
     font-size: 1.3rem;
     margin: 1.2vh 0 0 0;
+  }
+  @media (min-width: 600px) {
+    .section-contacts {
+      padding: 5%;
+    }
+  }
+
+  /* <footer> */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+    color: #464646;
+    background-color: #FDFDFD;
+  }
+  .footer-links {
+    display: flex;
+    gap: 0.3rem;
   }
