@@ -13,7 +13,7 @@
 
   .name-header {
     display: flex;
-    gap: 1vh;
+    gap: 1vw;
     
     color: #464646;
     text-decoration: none;
@@ -37,7 +37,8 @@
 
   .menu-desktop {
     display: none;
-    gap: 2vh;
+    gap: 2vw;
+    margin: 0 1vw 0 0;
   }
 
   @media (min-width: 750px) {
@@ -51,7 +52,8 @@
     display: flex;
     flex-flow: wrap column-reverse;
     margin: 5vh 0 0 0;
-    padding: 5vh 0 5vh 0;
+    padding: 5vh 0;
+    color: #464646;
   }
 
   .content-presentation {
@@ -125,6 +127,7 @@
   .section-about-me {
     padding: 15%;
     
+    color: #464646;
     background-color: #EAF2FD;
   }
 
@@ -159,15 +162,15 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 5%;
-    gap: 5vh;
+    padding: 15%;
+    gap: 2.5vh;
   }
   .container-skills, .container-learning {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
     gap: 5vw;
-    padding: 0 2vh;
+    padding: 0 1vh;
     font-size: 5vh;
     color: #2A7AE4;
     
@@ -175,6 +178,13 @@
   .title-skills, .title-learning {
     text-align: center;
     font-size: 2rem;
+    color: #464646;
+  }
+
+  @media (min-width: 600px) {
+    .section-skills, .section-learning {
+      padding: 5%;
+    }
   }
 
   /* <section formation> */
@@ -183,7 +193,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    padding: 5%;
+    padding: 15%;
     gap: 5vh;
     background-color: #EAF2FD;
     color: #464646;
@@ -215,6 +225,11 @@
   .formation-text, .status-formation {
     text-align: center;
     margin: 0 0 1vh 0;
-    width: 15vw;
+    width: auto;
     font-size: 1.1rem;
+  }
+  @media (min-width: 600px) {
+    .academic-education {
+      padding: 5%;
+    }
   }
