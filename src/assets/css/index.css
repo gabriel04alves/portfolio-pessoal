@@ -6,7 +6,7 @@
     top: 0;
     width: 100%;
     height: 5vh;
-
+    z-index: 2;
     background-color: #EDEDED;
     color: #464646;
   }
@@ -60,6 +60,7 @@
   .section-presentation {
     display: flex;
     flex-flow: wrap column-reverse;
+    gap: 5vw;
     margin: 5vh 0 0 0;
     padding: 5vh 0;
     color: #464646;
@@ -73,6 +74,14 @@
     max-width: 75%;
     gap: 3vh;
     padding: 2vh 0 0 0;
+  }
+
+  .container-texts-section-one {
+    display: flex;
+    flex-flow: column;
+    gap: 1vh;
+    margin: 0 0 1vh 0;
+    width: 60vw;
   }
 
   .options-presentation {
@@ -90,23 +99,27 @@
     height: 1vh;
   }
   .title-presentation {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
-  
   .subtitle-presentation, .options-presentation {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  
+  .flag-subtitle-presentation {
+    max-height: 0.9rem;
+    border-radius: 3px;
+  }
   .image-presentation {
-    width: 50vw;
+    width: 45%;
     border-radius: 50%;
   }
 
   .presentation-image-container {
     display: flex;
+    align-self: center;
     justify-content: center;
     margin: 1vh 0 0 0;
-    width: 100vw;
+    width: auto;
+    z-index: -1;
   }
   
   a {
@@ -114,11 +127,11 @@
     text-decoration: none;
     color: #464646;
   }
-  
-  @media (min-width: 600px) {
+  @media (min-width: 901px) {
     .section-presentation {
       flex-direction: row;
-      padding: 5%;
+      padding: 5vw;
+      height: 80vh;
     }
     .content-presentation {
       gap: 1.5vh;
@@ -135,15 +148,14 @@
       width: min-content;
     }
     .image-presentation {
-      height: 22vw;
-      width: 22vw;
+      height: 24vw;
+      width: 24vw;
     }
   }
 
   /* <Section 'about me'> */
   .section-about-me {
     padding: 15%;
-    
     color: #464646;
     background-color: #EAF2FD;
   }
@@ -229,11 +241,13 @@
     gap: 2vh;
   }
   .container-image-academic-formation {
+    display: flex;
+    justify-content: center;
     background-color: #FFF;
-    padding: 2vh 5vw;
+    padding: 3vh 0;
   }
   .image {
-    width: 10rem;
+    width: 45%;
   }
   .title-academic-education {
     text-align: center;
