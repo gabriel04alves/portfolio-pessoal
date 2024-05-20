@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+    color: var(--font-color-main);
+    background-color: var(--footer-bg-color);
+  }
+  .footer-links {
+    display: flex;
+    gap: 0.3rem;
+  }

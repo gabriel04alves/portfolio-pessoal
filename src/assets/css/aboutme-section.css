@@ -1,0 +1,33 @@
+.section-about-me {
+    padding: 15%;
+    color: var(--font-color-main);
+    background-color: var(--section-bg-color-soft);
+  }
+
+  .title-about-me {
+    font-size: 2rem;
+  }
+
+  .text-about-me {
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 2vh 0 0 0;
+  }
+
+  .signature-about-me {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 2vh 0 0 0;
+  }
+
+  @media (min-width: 600px) {
+    .section-about-me {
+      padding: 5%;
+    }
+    .text-about-me {
+      font-size: 1.3rem;
+      width: 70%;
+      margin: 2vh 0 0 0;
+    }
+  }

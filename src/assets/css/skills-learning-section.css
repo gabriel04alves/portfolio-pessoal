@@ -1,0 +1,28 @@
+.section-skills, .section-learning {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 15%;
+    gap: 2.5vh;
+  }
+  .container-skills, .container-learning {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 5vw;
+    padding: 0 1vh;
+    font-size: 5vh;
+    color: var(--item-color-accent);
+    
+  }
+  .title-skills, .title-learning {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--font-color-main);
+  }
+
+  @media (min-width: 600px) {
+    .section-skills, .section-learning {
+      padding: 5%;
+    }
+  }
