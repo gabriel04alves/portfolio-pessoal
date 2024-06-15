@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <script src="./js/index.js" defer></script>
+    <script src="./js/swiper.js" defer></script>
     <title>Gabriel Alves | portfólio pessoal</title>
 </head>
 <body>
@@ -177,23 +179,54 @@
         </div>
       </section>
       <section class="section-projects" id="section-projects">
-        <h2><b>Projetos</b></h2>
-        <div class="project-container">
-          <h3>This is my project</h3>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
-          <div class="project-links">
-            <a href="https://github.com/gabriel04alves/portfolio-pessoal" class="project-github-url project-url-item">
-              <i class="fab fa-github"></i>
-              <p>/gabriel04alves/myproject</p>
-            </a>
-            <a href="hhtps://galves.tech" class="project-deploy-url project-url-item ">
-              <i class="fa fa-link"></i>
-              <p>/gabriel04alves/myproject</p>
-            </a>
+        <h2><b>Principais Projetos</b></h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide">
+                <div class="project-container">
+                  <h3>Project 1</h3>
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                  <div class="project-links">
+                      <a href="https://github.com/gabriel04alves/portfolio-pessoal" class="project-github-url project-url-item">
+                          <i class="fab fa-github"></i>
+                          <p>/gabriel04alves/project1</p>
+                      </a>
+                      <a href="https://galves.tech" class="project-deploy-url project-url-item">
+                          <i class="fa fa-link"></i>
+                          <p>/gabriel04alves/project1</p>
+                      </a>
+                  </div>
+                  <div class="project-image-container">
+                      <img class="project-image" src="./assets/images/site.png" alt="site image">
+                  </div>
+              </div> -->
+              </div>
+              <div class="swiper-slide">
+                <div class="project-container">
+                  <h3>Project 2</h3>
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                  <div class="project-links">
+                      <a href="https://github.com/gabriel04alves/portfolio-pessoal" class="project-github-url project-url-item">
+                          <i class="fab fa-github"></i>
+                          <p>/gabriel04alves/project1</p>
+                      </a>
+                      <a href="https://galves.tech" class="project-deploy-url project-url-item">
+                          <i class="fa fa-link"></i>
+                          <p>/gabriel04alves/project1</p>
+                      </a>
+                  </div>
+                  <div href="https://galves.tech" class="project-image-container">
+                    <a href="href=https://galves.tech">
+                      <img class="project-image" src="./assets/images/site.png" alt="site image">
+                    </a>  
+                  </div>
+              </div>
+              </div>
+              <!-- Adicione mais divs swiper-slide conforme necessário -->
           </div>
-          <div class="project-image-container">
-            <img class="project-image" src="./assets/images/site.png" alt="site image">
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="section-contacts" id="section-contacts">
@@ -234,10 +267,9 @@
       </div>
     </footer>
 
-    <!-- TypewriterJS -->
+    <!-- scripts: -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./js/animations.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
-
-<!-- bugfix -->
