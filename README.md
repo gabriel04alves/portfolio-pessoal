@@ -1,6 +1,8 @@
 ## Portfólio pessoal 
  
-#### Este projeto consiste em um portfólio pessoal desenvolvido utilizando HTML, CSS e JavaScript, com o intuito de apresentar de forma prática e profissional informações sobre mim e minha trajetória profissional.
+![Preview](./src/assets/images/portfolio.png)
+
+#### Este projeto consiste no meu portfólio pessoal desenvolvido utilizando JavaScript para web, com o intuito de apresentar de forma objetiva e profissional informações sobre mim e minha carreira.
 
 #
-#### Deploy: https://galves.surge.sh
+#### O link para o portfólio é: https://galves.surge.sh
