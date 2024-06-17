@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: column;
     gap: 2vh;
+    background-color: var(--section-bg-color-soft);
   }
   .container-contact-title {
     font-size: 1.8rem;
