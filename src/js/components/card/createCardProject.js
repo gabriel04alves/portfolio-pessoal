@@ -7,6 +7,11 @@ export function card(id, name, description, github, deploy, image) {
 
     projectContainer.innerHTML = `
         <div class="project-card">
+            <div class="project-image-container">
+                <a href="${deploy}">
+                    <img class="project-image" src="${image}" alt="${name}">
+                </a>  
+            </div>
             <h3>${name}</h3>
             <h4>${description}</h4>
             <div class="project-links">
@@ -18,11 +23,6 @@ export function card(id, name, description, github, deploy, image) {
                     <i class="fa fa-link"></i>
                     <p>Veja o projeto</p>
                 </a>
-            </div>
-            <div class="project-image-container">
-                <a href="${deploy}">
-                    <img class="project-image" src="${image}" alt="${name}">
-                </a>  
             </div>
         </div>
     `;
