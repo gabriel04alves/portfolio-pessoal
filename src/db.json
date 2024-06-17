@@ -2,16 +2,16 @@
     "projects": [
         {
             "id": 1,
-            "name": "Calculadora em React",
-            "description": "Projeto de calculadora desenvolvido em React como parte do curso Web-Moderno da Cod3r.",
-            "deploy": "https://thecalc.surge.sh/",
-            "github": "https://github.com/gabriel04alves/calculadora-react",
-            "image": "/src/assets/images/calc-react.png"
+            "name": "Jogo do Número Secreto",
+            "description": "Jogo de adivinhação desenvolvido em JavaScript, onde o objetivo é adivinhar um número secreto.",
+            "deploy": "https://numero-secreto.surge.sh",
+            "github": "https://github.com/gabriel04alves/numero-secreto-js",
+            "image": "/src/assets/images/numero-secreto.png"
         },
         {
             "id": 2,
             "name": "QRCode Generator",
-            "description": "O projeto consiste em um gerador de QRCode utilizando Vue.js e a biblioteca QRious.",
+            "description": "Projeto de um gerador de QRCode utilizando Vue.js e a biblioteca QRious.",
             "deploy": "https://qrcode-vuejs.surge.sh",
             "github": "https://github.com/gabriel04alves/qrcode-vuejs",
             "image": "/src/assets/images/qrcode.png"
@@ -19,27 +19,26 @@
         {
             "id": 3,
             "name": "Codificador Simples",
-            "description": "Este é um projeto de um sistema de criptografia simples, desenvolvido ao longo de um desafio durante um curso da Alura. O projeto é responsivo para todos os dispositivos e foi desenvolvido utilizando as tecnologias JavaScript, HTML5, CSS3, além das bibliotecas SweetAlert2 e AOS.",
+            "description": "Projeto de um sistema de criptografia simples, desenvolvido durante um desafio do curso da Alura.",
             "deploy": "https://codificador-simples.netlify.app/",
             "github": "https://github.com/gabriel04alves/codificador-simples-js",
             "image": "/src/assets/images/codificador.png"
         },
         {
             "id": 4,
-            "name": "Gerador de conselhos",
-            "description": "O Gerador de Conselhos é uma aplicação web desenvolvida com a biblioteca Vue.js. O objetivo desse pequeno projeto é praticar e aprimorar conhecimentos em Vue.js e consumo de API. A aplicação oferece a funcionalidade de gerar conselhos aleatórios em diversas áreas da vida. Para fornecer os conselhos, o projeto se conecta a uma API externa.",
+            "name": "Gerador de Conselhos",
+            "description": "Aplicação web desenvolvida com Vue.js que gera conselhos aleatórios, utilizando uma API externa.",
             "deploy": "https://advice-generator-vuejs.surge.sh/",
             "github": "https://github.com/gabriel04alves/gerador-de-conselhos-vuejs",
             "image": "/src/assets/images/conselho.png"
         },
         {
             "id": 5,
-            "name": "Jogo do número secreto",
-            "description": "O Jogo do Número Secreto consiste em jogo interativo de adivinhação desenvolvido com JavaScript. O objetivo é adivinhar um número secreto gerado aleatoriamente, recebendo dicas se o palpite está acima ou abaixo do número correto até acertar.",
-            "deploy": "https://numero-secreto.surge.sh",
-            "github": "https://github.com/gabriel04alves/numero-secreto-js",
-            "image": "/src/assets/images/numero-secreto.png"
+            "name": "Calculadora em React",
+            "description": "Projeto de uma calculadora desenvolvido em React como parte do curso Web Moderno da Cod3r.",
+            "deploy": "https://thecalc.surge.sh/",
+            "github": "https://github.com/gabriel04alves/calculadora-react",
+            "image": "/src/assets/images/calc-react.png"
         }
-
     ]
 }
