@@ -7,13 +7,14 @@ const swiperWrapper = document.querySelector(".swiper-wrapper");
 async function showProjects() {
     try {
         const getFromApi = await connectApi.getData();
-        getFromApi.forEach(project => {
+        console.log(getFromApi.projects)
+        getFromApi.projects.forEach(project => {
             swiperWrapper.appendChild(
                 card(project.id, project.name, project.description, project.github, project.deploy, project.image)
             );
         });
 
-        initSwiper(); // Initialize Swiper after projects are added
+        initSwiper(); 
     } catch(error) {
         swiperWrapper.innerHTML = `
             <p style="font-weight: 300; padding: 4rem;">Ocorreu algum erro ao buscar os projetos... Enquanto resolvo isso, você pode visualizar os projetos no 
