@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="./js/index.js" defer></script>
-    <script src="./js/connectApi.js" type="module" defer></script>
-    <script src="./js/showProjects.js" type="module" defer></script>
-    <script src="./js/swiper.js" defer></script>
+    <script src="./js/components/card/connectApiProjects.js" type="module" defer></script>
+    <script src="./js/components/card/showProjects.js" type="module" defer></script>
+    <script src="./js/components/card/createCardProject.js" type="module" defer></script>
+    <script src="./js/components/card/initSwiper.js" type="module" defer></script>
     <title>Gabriel Alves | portfólio pessoal</title>
 </head>
 <body>
@@ -182,53 +183,13 @@
       </section>
       <section class="section-projects" id="section-projects">
         <h2><b>Principais Projetos</b></h2>
+        <hr>
         <div class="swiper">
           <div class="swiper-wrapper">
-              <!-- <div class="swiper-slide">
-                <div class="project-container">
-                  <h3>Project 1</h3>
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-                  <div class="project-links">
-                      <a href="https://github.com/gabriel04alves/portfolio-pessoal" class="project-github-url project-url-item">
-                          <i class="fab fa-github"></i>
-                          <p>/gabriel04alves/project1</p>
-                      </a>
-                      <a href="https://galves.tech" class="project-deploy-url project-url-item">
-                          <i class="fa fa-link"></i>
-                          <p>/gabriel04alves/project1</p>
-                      </a>
-                  </div>
-                  <div class="project-image-container">
-                      <img class="project-image" src="./assets/images/site.png" alt="site image">
-                  </div>
-              </div> -->
-              </div>
-              <!-- <div class="swiper-slide">
-                <div class="project-container">
-                  <h3>Project 2</h3>
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-                  <div class="project-links">
-                      <a href="https://github.com/gabriel04alves/portfolio-pessoal" class="project-github-url project-url-item">
-                          <i class="fab fa-github"></i>
-                          <p>/gabriel04alves/project1</p>
-                      </a>
-                      <a href="https://galves.tech" class="project-deploy-url project-url-item">
-                          <i class="fa fa-link"></i>
-                          <p>/gabriel04alves/project1</p>
-                      </a>
-                  </div>
-                  <div href="https://galves.tech" class="project-image-container">
-                    <a href="href=https://galves.tech">
-                      <img class="project-image" src="./assets/images/site.png" alt="site image">
-                    </a>  
-                  </div>
-              </div>
-              </div> -->
-              <!-- Adicione mais divs swiper-slide conforme necessário -->
+              
           </div>
-          <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <section class="section-contacts" id="section-contacts">

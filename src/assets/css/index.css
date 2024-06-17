@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
-@import url('header.css');
-@import url('presentation-section.css');
-@import url('aboutme-section.css');
-@import url('skills-learning-section.css');
-@import url('formation-section.css');
-@import url('contacts-section.css');
-@import url('projects-section.css');
-@import url('footer.css');
+@import url('./components/header.css');
+@import url('./components/presentation-section.css');
+@import url('./components/aboutme-section.css');
+@import url('./components/skills-learning-section.css');
+@import url('./components/formation-section.css');
+@import url('./components/contacts-section.css');
+@import url('./components/projects-section.css');
+@import url('./components/footer.css');
 
 [data-context="day"] {
   --bg-color-main: #EDEDED;
