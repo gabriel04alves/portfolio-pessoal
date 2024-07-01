@@ -37,7 +37,7 @@
   }
   .options-presentation a:hover {
     transform: translate(0.5vh, 0.5vh);
-    height: 1vh;
+    height: 2vh;
   }
   .title-presentation {
     font-size: 1.7rem;

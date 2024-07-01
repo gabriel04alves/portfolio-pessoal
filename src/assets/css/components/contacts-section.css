@@ -16,6 +16,7 @@
     margin: 1.2vh 0 0 0;
     transition: transform 0.3s ease;
     height: 3vh;
+    width: fit-content;
   }
   .option-contact a {
     height: 3vh;
