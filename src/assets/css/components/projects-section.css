@@ -32,15 +32,15 @@
 }
 
 .project-container h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 
 .project-container h4 {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     font-weight: 300;
     color: var(--font-color-second);
-    padding: 0 10vw;
+    padding: 0 8vw;
 }
 
 .project-links {
@@ -56,6 +56,11 @@
     font-size: 1.3rem;
     font-weight: 200;
     gap: 0.3rem;
+    color: var(--font-color-second);
+}
+
+.project-url-item:hover {
+    color: var(--font-color-main);
 }
 
 .project-url-item p {
@@ -70,17 +75,16 @@
 
 .project-image {
     display: none;
-    width: 68vw;
+    width: 25rem;
     border: 1px solid var(--section-bg-color-soft);
-    border-radius: 16px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .project-image:hover {
     opacity: 1;
 }
 
-.swiper {
+    .swiper {
     width: 100%;
     height: 100%;
 }
@@ -95,6 +99,9 @@
     .project-container h3 {
         font-weight: 500;
     }
+    .project-container h4 {
+        display: none;
+    }
     .project-url-item {
         font-weight: 400;
     }
@@ -102,7 +109,7 @@
         font-size: 1rem;
     }
     .project-links {
-        gap: 3vw;
+        gap: 1vw;
     }
     .project-image-container {
         display: flex;
@@ -116,5 +123,4 @@
     .swiper-button-next, .swiper-button-prev {
         display: flex;
     }
-    
 }

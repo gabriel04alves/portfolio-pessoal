@@ -7,7 +7,6 @@ const swiperWrapper = document.querySelector(".swiper-wrapper");
 async function showProjects() {
     try {
         const getFromApi = await connectApi.getData();
-        console.log(getFromApi.projects)
         getFromApi.projects.forEach(project => {
             swiperWrapper.appendChild(
                 card(project.id, project.name, project.description, project.github, project.deploy, project.image)
