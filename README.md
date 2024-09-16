@@ -1,8 +1,5 @@
-## Portfólio pessoal 
- 
-![Preview](./src/assets/images/portfolio.png)
+# Vue 3 + Vite
 
-#### Este projeto consiste no meu portfólio pessoal desenvolvido utilizando JavaScript para web, com o intuito de apresentar de forma objetiva e profissional informações sobre mim e minha carreira.
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-#
-#### O link para o portfólio é: https://galves.surge.sh
+Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
