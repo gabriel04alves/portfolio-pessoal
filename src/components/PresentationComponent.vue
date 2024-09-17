@@ -1,7 +1,7 @@
 <template>
   <section id="section-presentation">
     <div class="texts_and_links-container">
-      <div class="">
+      <div class="title_and_desc-container">
         <h1 ref="title"></h1>
         <p ref="subtitle"></p>
       </div>
@@ -75,32 +75,41 @@ export default {
 <style scoped>
 section {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 
 .texts_and_links-container {
   display: flex;
   flex-flow: column wrap;
-  gap: 5vh;
-  width: 50%;
+  align-items: center;
+  gap: 3vh;
+  width: 75%;
+  margin-top: 5vh;
   color: var(--font-color-main);
 }
 
+.title_and_desc-container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1vh;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--font-color-second);
 }
 
 .links-container {
   display: flex;
   flex-flow: wrap;
-  gap: 2vw;
+  gap: 3vw;
   text-decoration: none;
   color: var(--font-color-main);
 }
@@ -109,14 +118,40 @@ p {
   font-size: 1rem;
   text-decoration: none;
   color: var(--font-color-main);
+  transition: transform 0.3s ease;
+}
+
+.links-container a:hover {
+  transform: translate(0.5vh, 0.5vh);
 }
 
 img {
   border-radius: 50%;
+  height: 25vh;
 }
 
-/* @media (min-width: 901px) {
+@media (min-width: 901px) {
   section {
+    flex-direction: row;
+    height: 100vh;
   }
-} */
+  img {
+    height: auto;
+  }
+  .texts_and_links-container {
+    width: 50%;
+    margin-top: 0;
+    align-items: start;
+  }
+  .links-container a {
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
 </style>
