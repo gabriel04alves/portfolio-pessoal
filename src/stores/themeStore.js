@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const useThemeStore = defineStore("theme", {
   state: () => ({
-    theme: "day",
+    theme: "dark",
     themes: {
       day: {
         "--bg-color-main": "#ededed",

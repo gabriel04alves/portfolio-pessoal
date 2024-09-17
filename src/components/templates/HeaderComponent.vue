@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { useThemeStore } from "../stores/themeStore";
+import { useThemeStore } from "../../stores/themeStore.js";
 
 export default {
   setup() {
