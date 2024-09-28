@@ -13,27 +13,22 @@
         <a href="https://linkedin.com/in/gabriel04alves" target="_blank">
           <i class="fab fa-linkedin"></i> Linkedin
         </a>
-        <a
-          href="https://drive.usercontent.google.com/download?id=1ms_JlvmnYVl_VMZhvX8hNwdWax3JlbEz&export=download"
-          target="_blank"
-        >
+        <a href="https://drive.usercontent.google.com/download?id=1ms_JlvmnYVl_VMZhvX8hNwdWax3JlbEz&export=download"
+          target="_blank">
           <i class="far fa-file"></i> Currículo
         </a>
       </div>
     </div>
 
     <div class="">
-      <img
-        src="https://avatars.githubusercontent.com/u/94906382?v=4"
-        alt="Minha Foto"
-      />
+      <img src="https://avatars.githubusercontent.com/u/94906382?v=4" alt="Minha Foto" />
     </div>
   </section>
 </template>
 
 <script>
 import { ref } from "vue";
-import { useTypewriter } from "../../composables/useTypewriter";
+import { useTypewriter } from "../../services/useTypewriter";
 
 export default {
   name: "PresentationComponent",
@@ -87,7 +82,7 @@ section {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  gap: 3vh;
+  gap: 4vh;
   width: 95%;
   margin-top: 5vh;
   color: var(--color-text-primary);
@@ -111,7 +106,7 @@ p {
 .links-container {
   display: flex;
   flex-flow: wrap;
-  gap: 3vw;
+  gap: 5vw;
   text-decoration: none;
   color: var(--color-text-primary);
 }
@@ -139,17 +134,25 @@ img {
     margin-top: 0;
     padding: 0;
   }
+
   img {
     height: auto;
   }
+
   .texts_and_links-container {
     width: 50%;
     margin-top: 0;
     align-items: start;
   }
+
   .links-container a {
     font-size: 1.3rem;
   }
+
+  .links-container {
+    gap: 3vw;
+  }
+
   h1 {
     font-size: 3rem;
   }

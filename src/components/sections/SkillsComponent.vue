@@ -77,7 +77,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
-    padding: 10% 6%;
+    padding: 10%;
     color: var(--color-text-primary);
     font-size: 1rem;
 
@@ -99,8 +99,8 @@ ul li {
 ul li i,
 img {
     color: var(--color-accent);
-    font-size: 3.5rem;
-    height: 3.5rem;
+    font-size: 3rem;
+    height: 3rem;
     user-select: none;
 }
 
@@ -108,6 +108,12 @@ img {
     section {
         padding: 3%;
         font-size: 1.25rem;
+    }
+
+    ul li i,
+    img {
+        font-size: 3.5rem;
+        height: 3.5rem;
     }
 }
 </style>
