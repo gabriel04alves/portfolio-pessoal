@@ -33,7 +33,7 @@
 
 <script>
 import { ref } from "vue";
-import { useTypewriter } from "../composables/useTypewriter";
+import { useTypewriter } from "../../composables/useTypewriter";
 
 export default {
   name: "PresentationComponent",
@@ -57,7 +57,7 @@ export default {
         strings: [
           {
             text: `Sou um desenvolvedor de software em constante aprimoramento. Aqui, você poderá descobrir mais sobre mim. <i class="fa-regular fa-lightbulb"></i>`,
-            pause: 7500,
+            pause: 4900,
           },
         ],
         options: { loop: false, delay: 75 },
@@ -79,6 +79,8 @@ section {
   justify-content: space-around;
   align-items: center;
   height: auto;
+  margin-bottom: 5vh;
+  padding: 8vh 6%;
 }
 
 .texts_and_links-container {
@@ -86,9 +88,9 @@ section {
   flex-flow: column wrap;
   align-items: center;
   gap: 3vh;
-  width: 75%;
+  width: 95%;
   margin-top: 5vh;
-  color: var(--font-color-main);
+  color: var(--color-text-primary);
 }
 
 .title_and_desc-container {
@@ -103,7 +105,7 @@ h1 {
 
 p {
   font-size: 1rem;
-  color: var(--font-color-second);
+  color: var(--color-text-secondary);
 }
 
 .links-container {
@@ -111,13 +113,13 @@ p {
   flex-flow: wrap;
   gap: 3vw;
   text-decoration: none;
-  color: var(--font-color-main);
+  color: var(--color-text-primary);
 }
 
 .links-container a {
   font-size: 1rem;
   text-decoration: none;
-  color: var(--font-color-main);
+  color: var(--color-text-primary);
   transition: transform 0.3s ease;
 }
 
@@ -133,7 +135,9 @@ img {
 @media (min-width: 901px) {
   section {
     flex-direction: row;
-    height: 100vh;
+    height: 96vh;
+    margin-top: 0;
+    padding: 0;
   }
   img {
     height: auto;
