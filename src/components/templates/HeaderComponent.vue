@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a href="" class="">
+    <a href="#section-presentation" class="">
       <b>Gabriel Alves</b>
     </a>
     <div class="header-container-items">
@@ -8,6 +8,8 @@
         <a href="#section-about_me">Sobre mim</a>
         <a href="#section-skills">Skills</a>
         <a href="#section-learning">Apredendo</a>
+        <a href="#academic-education">Formação</a>
+        <a href="#section-contacts">Contatos</a>
       </div>
       <button @click="switchTheme">
         <i v-if="themeStore.currentTheme === 'dark'" class="fas fa-moon"></i>
@@ -82,7 +84,7 @@ button {
   .header_links {
     display: flex;
     align-items: center;
-    gap: 3vw;
+    gap: 2vw;
     margin: 0 3vw;
   }
 
