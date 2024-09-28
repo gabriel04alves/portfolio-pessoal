@@ -32,5 +32,5 @@ html {
 }
 
 body {
-  background-color: var(--bg-color-main);
+  background-color: var(--color-background-primary);
 }

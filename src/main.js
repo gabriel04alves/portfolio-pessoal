@@ -2,7 +2,8 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import App from "./App.vue";
 import { useThemeStore } from "./stores/themeStore";
-import "./assets/style.css";
+import "./assets/styles/main.css";
+import "./assets/styles/variables.css";
 
 import "@fortawesome/fontawesome-free/css/all.css";
 

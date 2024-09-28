@@ -1,0 +1,21 @@
+.dark-theme {
+  --color-background-primary: #202020;
+  --color-text-primary: #ededed;
+  --color-text-secondary: #959595;
+  --color-text-focus: #959595;
+  --color-background-secondary: #002f40;
+  --color-accent: #2a7ae4;
+  --color-image-background: #fff;
+  --color-footer-background: #272727;
+}
+
+.day-theme {
+  --color-background-primary: #ededed;
+  --color-text-primary: #464646;
+  --color-text-secondary: #959595;
+  --color-text-focus: #1c1c1c;
+  --color-background-secondary: #cee2fe;
+  --color-accent: #2a7ae4;
+  --color-image-background: #fff;
+  --color-footer-background: #fdfdfd;
+}
