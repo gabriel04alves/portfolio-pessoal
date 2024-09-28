@@ -6,6 +6,8 @@
     <div class="header-container-items">
       <div class="header_links">
         <a href="#section-about_me">Sobre mim</a>
+        <a href="#section-skills">Skills</a>
+        <a href="#section-learning">Apredendo</a>
       </div>
       <button @click="switchTheme">
         <i v-if="themeStore.currentTheme === 'dark'" class="fas fa-moon"></i>
@@ -33,6 +35,7 @@ export default {
 .fa-sun {
   color: #ffd700;
 }
+
 .fa-moon {
   color: #ffd700;
 }
@@ -87,6 +90,7 @@ button {
     font-size: 1.2rem;
     transition: transform 0.3s ease;
   }
+
   .header_links a:hover {
     transform: translate(-0.5vh, -0.5vh);
     color: var(--color-text-focus);
