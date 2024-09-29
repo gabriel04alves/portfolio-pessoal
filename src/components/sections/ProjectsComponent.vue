@@ -6,7 +6,7 @@
             @swiper="onSwiper" @slideChange="onSlideChange">
             <swiper-slide v-for="project in projects" :key="project.id">
                 <div class="card">
-                    <a :href="project.image">
+                    <a :href="project.deploy">
                         <img :src="project.image" alt="Project Image" />
                     </a>
                     <h3>{{ project.name }}</h3>

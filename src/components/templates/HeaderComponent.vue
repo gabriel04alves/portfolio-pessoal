@@ -69,6 +69,7 @@ header {
 a {
   text-decoration: none;
   color: var(--color-text-primary);
+  padding: 0vh;
 }
 
 button {
@@ -81,17 +82,18 @@ button {
 @media (min-width: 600px) {
   header {
     font-size: 1.6rem;
-    padding: 2vh 6%;
+    padding: 1vh 6%;
   }
 
   .header_links {
     display: flex;
     align-items: center;
-    gap: 2vw;
+    gap: 1vw;
     margin: 0 3vw;
   }
 
   .header_links a {
+    padding: 1.5vh;
     font-size: 1.2rem;
     transition: transform 0.3s ease;
   }
