@@ -1,8 +1,20 @@
-## Portfólio pessoal 
- 
-![Preview](./src/assets/images/portfolio.png)
+# Meu Portfólio em Vue.js
 
-#### Este projeto consiste no meu portfólio pessoal desenvolvido utilizando JavaScript para web, com o intuito de apresentar de forma objetiva e profissional informações sobre mim e minha carreira.
+Bem-vindo ao meu projeto de portfólio pessoal construído com Vue 3! Este projeto exibe minhas habilidades, experiências e projetos em uma aplicação web.
 
-#
-#### O link para o portfólio é: https://galves.surge.sh
+## Funcionalidades
+
+- Design responsivo;
+- Alternância entre tema claro/escuro;
+- Efeito de máquina de escrever para exibição de texto dinâmico.
+
+## Tecnologias Utilizadas
+
+- Vue 3;
+- Vite;
+- TypeWriterJs;
+- SwiperJs.
+
+## Deploy
+
+- [galves.tech](https://galves.tech)
