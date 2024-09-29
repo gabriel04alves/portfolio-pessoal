@@ -5,6 +5,7 @@
     <AboutmeComponent />
     <SkillsComponent />
     <FormationComponent />
+    <ProjectsComponent />
     <ContactsComponent />
     <FooterComponent />
   </main>
@@ -16,6 +17,7 @@ import PresentationComponent from "./components/sections/PresentationComponent.v
 import AboutmeComponent from "./components/sections/AboutmeComponent.vue";
 import SkillsComponent from "./components/sections/SkillsComponent.vue";
 import FormationComponent from "./components/sections/FormationComponent.vue";
+import ProjectsComponent from "./components/sections/ProjectsComponent.vue";
 import ContactsComponent from "./components/sections/ContactsComponent.vue";
 import FooterComponent from "./components/templates/FooterComponent.vue";
 
@@ -26,6 +28,7 @@ export default {
     AboutmeComponent,
     SkillsComponent,
     FormationComponent,
+    ProjectsComponent,
     ContactsComponent,
     FooterComponent
   },

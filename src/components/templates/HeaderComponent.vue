@@ -9,6 +9,7 @@
         <a href="#section-skills">Skills</a>
         <a href="#section-learning">Apredendo</a>
         <a href="#academic-education">Formação</a>
+        <a href="#section-projects">Projetos</a>
         <a href="#section-contacts">Contatos</a>
       </div>
       <button @click="switchTheme">
@@ -52,6 +53,8 @@ header {
   justify-content: space-between;
   font-size: 1.2rem;
   box-sizing: border-box;
+  z-index: 2;
+  user-select: none;
 }
 
 .header-container-items {
