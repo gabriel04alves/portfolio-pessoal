@@ -91,7 +91,16 @@ img {
     background-color: var(--color-image-background);
 }
 
-@media (min-width: 600px) {
+
+@media (min-width: 600px) and (max-width: 1365px) {
+    section {
+        padding: 10% 0%;
+    }
+}
+
+
+
+@media (min-width: 1366px) {
     section {
         padding: 5%;
     }

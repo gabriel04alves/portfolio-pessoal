@@ -127,7 +127,9 @@ img {
   height: 25vh;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 600px) and (max-width: 1365px) {}
+
+@media (min-width: 1366px) {
   section {
     flex-direction: row;
     height: 96vh;

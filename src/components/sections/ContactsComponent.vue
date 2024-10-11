@@ -59,7 +59,18 @@ a:hover {
     transform: translate(0.5vh, -0.5vh);
 }
 
-@media (min-width: 600px) {
+
+@media (min-width: 600px) and (max-width: 1365px) {
+    section {
+        padding: 5%;
+    }
+
+    a {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1366px) {
     section {
         padding: 5%;
     }

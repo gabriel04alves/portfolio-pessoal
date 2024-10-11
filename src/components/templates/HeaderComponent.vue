@@ -79,7 +79,19 @@ button {
   cursor: pointer;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 1365px) {
+  header {
+    font-size: 1.4rem;
+    padding: 2vh 6%;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1366px) {
   header {
     font-size: 1.6rem;
     padding: 1vh 6%;
