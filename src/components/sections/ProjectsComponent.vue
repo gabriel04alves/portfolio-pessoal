@@ -1,7 +1,7 @@
 <template>
     <section id="section-projects">
         <h1><b>Projetos</b></h1>
-        <swiper class="swiper" modules="modules" :slides-per-view="1" :space-between="50" navigation :loop="true"
+        <swiper class="swiper" :modules="modules" :slides-per-view="1" :space-between="50" navigation :loop="true"
             :pagination="{ clickable: true }" :autoplay="{ delay: 6000, disableOnInteraction: false }"
             @swiper="onSwiper" @slideChange="onSlideChange">
             <swiper-slide v-for="project in projects" :key="project.id">
