@@ -13,7 +13,7 @@
         <a href="https://linkedin.com/in/gabriel04alves" target="_blank">
           <i class="fab fa-linkedin"></i> Linkedin
         </a>
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1D8BbxQA9LFfrx3-GHFtkGgczoPvMS4Ni&export=download"
+        <a href="https://drive.usercontent.google.com/u/0/uc?id=1EVhcHgJ0QDU9li_SDxGYnCjTsHVWWZKQ&export=download"
           target="_blank">
           <i class="far fa-file"></i> Currículo
         </a>
