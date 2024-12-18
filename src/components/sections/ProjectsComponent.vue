@@ -12,11 +12,11 @@
                     <h3>{{ project.name }}</h3>
                     <p>{{ project.description }}</p>
                     <div class="links">
-                        <a :href="project.deploy" target="_blank">
+                        <a :href="project.github" target="_blank">
                             <i class="fab fa-github"></i>
                             Veja o código
                         </a>
-                        <a :href="project.github" target="_blank">
+                        <a :href="project.deploy" target="_blank">
                             <i class="fa fa-link"></i>
                             Veja o projeto
                         </a>
