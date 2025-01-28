@@ -7,10 +7,15 @@ import "./assets/styles/variables.css";
 
 import "@fortawesome/fontawesome-free/css/all.css";
 
+import { initGoogleAnalytics } from "./services/analytics";
+
 const app = createApp(App);
 const pinia = createPinia();
 
 app.use(pinia);
+
+// Initialize Google Analytics
+initGoogleAnalytics();
 
 const themeStore = useThemeStore(pinia);
 themeStore.applyTheme();
