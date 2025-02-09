@@ -1,7 +1,7 @@
 <template>
-    <section id="section-skills">
+    <section id="section-stack">
         <h1>
-            <b> Skills </b>
+            <b> Stack </b>
         </h1>
         <ul>
             <li>
@@ -28,32 +28,13 @@
                 <i class="fab fa-python"></i>
             </li>
             <li>
+                <img src="../../assets/icons/django.svg"></img>
+            </li>
+            <li>
                 <i class="fab fa-git-alt"></i>
             </li>
             <li>
                 <i class="fab fa-linux"></i>
-            </li>
-            <li>
-                <i class="fab fa-"></i>
-            </li>
-        </ul>
-    </section>
-
-    <hr style="margin: 0 20%" />
-
-    <section id="section-learning">
-        <h1>
-            <b> Aprendendo </b>
-        </h1>
-        <ul id="section-learning">
-            <li>
-                <i class="fab fa-react"></i>
-            </li>
-            <li>
-                <i class="fab fa-angular"></i>
-            </li>
-            <li>
-                <img src="../../assets/icons/django.svg"></img>
             </li>
             <li>
                 <i class="fab fa-docker"></i>
@@ -66,6 +47,7 @@
             </li>
         </ul>
     </section>
+
 </template>
 
 <script setup></script>
