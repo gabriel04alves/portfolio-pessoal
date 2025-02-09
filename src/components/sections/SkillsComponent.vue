@@ -88,7 +88,7 @@ img {
 
 @media (min-width: 600px) {
     section {
-        padding: 3%;
+        padding: 3% 15%;
         font-size: 1.25rem;
     }
 

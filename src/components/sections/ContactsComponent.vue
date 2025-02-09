@@ -34,7 +34,6 @@ section {
     flex-flow: column;
     padding: 10%;
     gap: 2vh;
-    background-color: var(--color-background-secondary);
 }
 
 h1 {

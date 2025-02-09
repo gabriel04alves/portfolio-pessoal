@@ -8,6 +8,7 @@
         <a href="#section-about_me">Sobre mim</a>
         <a href="#section-stack">Stack</a>
         <a href="#academic-education">Formação</a>
+        <a href="#section-profissional_exp">Experiência</a>
         <a href="#section-projects">Projetos</a>
         <a href="#section-contacts">Contatos</a>
       </div>
