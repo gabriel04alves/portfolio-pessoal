@@ -29,10 +29,10 @@
         <div class="container--send-email">
             <h1 class="title--contacts">Me envie um email!</h1>
             <div class="form--contact">
-                <form action="">
-                    <input type="text" placeholder="Nome" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensagem" required></textarea>
+                <form ref="form" @submit.prevent="handleSendEmail">
+                    <input type="text" name="from_name" placeholder="Seu Nome" required>
+                    <input type="email" name="from_email" placeholder="Seu Email" required>
+                    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
                     <button class="btn--submit-contact-form" type="submit">
                         <i class="fa fa-paper-plane"></i>
                         Enviar
@@ -43,7 +43,18 @@
     </section>
 </template>
 
-<script setup></script>
+
+<script setup>
+import { ref } from "vue";
+import { sendEmail } from "../../services/emailService";
+
+const form = ref(null);
+
+const handleSendEmail = async () => {
+    await sendEmail(form.value);
+};
+</script>
+
 
 <style scoped>
 section {
