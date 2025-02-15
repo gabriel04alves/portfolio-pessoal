@@ -1,12 +1,12 @@
 <template>
     <section id="section-contacts">
-        <div>
+        <div class="container--contacts">
             <h1 class="title--contacts">
                 <b>
                     Contatos
                 </b>
             </h1>
-            <div>
+            <div class="items--contacts">
                 <a class="item--contact" href="https://wa.me/5547984950238">
                     <i class="fab fa-whatsapp"></i>
                     <p>+55 (47) 98495-0238</p>
@@ -125,9 +125,40 @@ textarea {
     align-self: center;
 }
 
-@media (min-width: 600px) and (max-width: 1365px) {
+@media (min-width: 0) and (max-width: 999px) {
     section {
         padding: 5%;
+        gap: 4vh;
+        justify-content: center;
+    }
+
+    .container--contacts {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        gap: 2vh;
+        text-align: center;
+
+    }
+
+    .container--send-email {
+        padding: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .items--contacts {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1vh;
     }
 
     .item--contact {
