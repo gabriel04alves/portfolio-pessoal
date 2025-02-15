@@ -1,48 +1,77 @@
 <template>
     <section id="section-contacts">
-        <h1>
-            <b>
-                Contatos
-            </b>
-        </h1>
         <div>
-            <a href="https://wa.me/5547984950238">
-                <i class="fab fa-whatsapp"></i>
-                <p>+55 (47) 98495-0238</p>
-            </a>
-            <a href="mailto:gabriel52.alves@gmail.com">
-                <i class="far fa-envelope icon"></i>
-                <p>gabriel52.alves@gmail.com</p>
-            </a>
-            <a href="https://linkedin.com/in/gabriel04alves">
-                <i class="fab fa-linkedin"></i>
-                <p>/gabriel04alves</p>
-            </a>
-            <a href="https://github.com/gabriel04alves">
-                <i class="fab fa-github"></i>
-                <p>/gabriel04alves</p>
-            </a>
+            <h1 class="title--contacts">
+                <b>
+                    Contatos
+                </b>
+            </h1>
+            <div>
+                <a class="item--contact" href="https://wa.me/5547984950238">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>+55 (47) 98495-0238</p>
+                </a>
+                <a class="item--contact" href="mailto:gabriel52.alves@gmail.com">
+                    <i class="far fa-envelope icon"></i>
+                    <p>gabriel52.alves@gmail.com</p>
+                </a>
+                <a class="item--contact" href="https://linkedin.com/in/gabriel04alves">
+                    <i class="fab fa-linkedin"></i>
+                    <p>/gabriel04alves</p>
+                </a>
+                <a class="item--contact" href="https://github.com/gabriel04alves">
+                    <i class="fab fa-github"></i>
+                    <p>/gabriel04alves</p>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="container--send-email">
+            <h1 class="title--contacts">Me envie um email!</h1>
+            <div class="form--contact">
+                <form ref="form" @submit.prevent="handleSendEmail">
+                    <input type="text" name="from_name" placeholder="Seu Nome" required>
+                    <input type="email" name="from_email" placeholder="Seu Email" required>
+                    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                    <button class="btn--submit-contact-form" type="submit">
+                        <i class="fa fa-paper-plane"></i>
+                        Enviar
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 </template>
 
-<script setup></script>
+
+<script setup>
+import { ref } from "vue";
+import { sendEmail } from "../../services/emailService";
+
+const form = ref(null);
+
+const handleSendEmail = async () => {
+    await sendEmail(form.value);
+};
+</script>
+
 
 <style scoped>
 section {
     display: flex;
-    flex-flow: column;
+    justify-content: space-between;
+    flex-flow: row wrap;
     padding: 10%;
     gap: 2vh;
-    background-color: var(--color-background-secondary);
 }
 
-h1 {
+.title--contacts {
     font-size: 1.8rem;
     color: var(--color-text-primary);
 }
 
-a {
+
+.item--contact {
     display: flex;
     align-items: center;
     gap: 1vw;
@@ -55,17 +84,53 @@ a {
     transition: transform 0.3s ease;
 }
 
-a:hover {
+.item--contact:hover {
     transform: translate(0.5vh, -0.5vh);
 }
 
+.container--send-email {
+    padding: 0 25% 0 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-top: 2vh;
+}
+
+input,
+textarea {
+    padding: 1vh;
+    width: 100%;
+    border: solid 0.5px var(--color-text-primary);
+    border-radius: 5px;
+
+    background-color: var(--color-background-primary);
+
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+}
+
+.btn--submit-contact-form {
+    padding: 1vh;
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+
+    align-self: center;
+}
 
 @media (min-width: 600px) and (max-width: 1365px) {
     section {
         padding: 5%;
     }
 
-    a {
+    .item--contact {
         margin: 0;
     }
 }

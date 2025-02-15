@@ -4,14 +4,10 @@
       <b> Sobre mim </b>
     </h1>
     <p>
-      Sou estudante de Sistemas de Informação e já me formei como técnico em
-      Informática. Estudo tecnologia diariamente com o objetivo de me tornar um
-      desenvolvedor de software. Possuo conhecimentos em JavaScript e seus
-      principais frameworks, Python e Git, além de hardware e virtualização.
-      Tenho experiência na área de suporte, o que me proporcionou competências
-      no atendimento ao cliente. No momento, além dos estudos em programação,
-      tenho interesse em temas como arquitetura limpa, gestão de pessoas e
-      desenvolvimento pessoal.
+      Atualmente, sou estudante de Sistemas de Informação e tenho formação técnica em Informática. Desenvolvo com
+      JavaScript e TypeScript, utilizando o framework Vue.js, além de Python com Django Rest Framework. Além disso, me
+      interesso por arquitetura de software, inteligência artificial, análise de dados e desenvolvimento pessoal. Estou
+      sempre em busca de aprendizado e novos desafios na área de tecnologia.
     </p>
   </section>
 </template>
@@ -46,6 +42,7 @@ i {
   section {
     padding: 5%;
   }
+
   p {
     font-size: 1.3rem;
     width: 70%;

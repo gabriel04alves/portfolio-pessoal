@@ -6,15 +6,15 @@
     <div class="header-container-items">
       <div class="header_links">
         <a href="#section-about_me">Sobre mim</a>
-        <a href="#section-skills">Skills</a>
-        <a href="#section-learning">Apredendo</a>
+        <a href="#section-stack">Stack</a>
         <a href="#academic-education">Formação</a>
+        <a href="#section-profissional_exp">Experiência</a>
         <a href="#section-projects">Projetos</a>
         <a href="#section-contacts">Contatos</a>
       </div>
       <button @click="switchTheme">
-        <i v-if="themeStore.currentTheme === 'dark'" class="fas fa-moon"></i>
-        <i v-else class="fas fa-sun"></i>
+        <i v-if="themeStore.currentTheme === 'dark'" class="fas fa-moon icon--change-theme"></i>
+        <i v-else class="fas fa-sun icon--change-theme"></i>
       </button>
     </div>
   </header>
@@ -77,6 +77,10 @@ button {
   font-size: larger;
   background-color: transparent;
   cursor: pointer;
+}
+
+.icon--change-theme {
+  color: var(--color-text-primary);
 }
 
 @media (min-width: 600px) and (max-width: 1365px) {

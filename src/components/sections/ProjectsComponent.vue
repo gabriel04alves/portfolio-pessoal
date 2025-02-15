@@ -5,21 +5,24 @@
             :pagination="{ clickable: true }" :autoplay="{ delay: 6000, disableOnInteraction: false }"
             @swiper="onSwiper" @slideChange="onSlideChange">
             <swiper-slide v-for="project in projects" :key="project.id">
-                <div class="card">
-                    <a :href="project.deploy">
-                        <img :src="project.image" alt="Project Image" />
-                    </a>
-                    <h3>{{ project.name }}</h3>
-                    <p>{{ project.description }}</p>
-                    <div class="links">
-                        <a :href="project.github" target="_blank">
-                            <i class="fab fa-github"></i>
-                            Veja o código
-                        </a>
-                        <a :href="project.deploy" target="_blank">
-                            <i class="fa fa-link"></i>
-                            Veja o projeto
-                        </a>
+                <div class="box--content-main">
+                    <div class="card">
+                        <h3>{{ project.name }}</h3>
+                        <p>{{ project.description }}</p>
+                        <div class="tags--technologies">
+                            <tag v-for="technology in project.technologies" :key="technology">{{ technology }}</tag>
+                        </div>
+                        <div class="links">
+                            <a :href="project.github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Veja no GitHub
+                            </a>
+                            <a v-if="project.deploy && project.deploy !== 'None'" :href="project.deploy" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fa fa-link"></i>
+                                Demo ao vivo
+                            </a>
+                        </div>
                     </div>
                 </div>
             </swiper-slide>
@@ -59,8 +62,10 @@ export default {
 
 <style scoped>
 section {
-    padding: 10% 0%;
+    padding: 5% 0%;
+    background-color: var(--color-background-secondary);
     color: var(--color-text-primary);
+
 }
 
 h1 {
@@ -69,8 +74,9 @@ h1 {
 }
 
 h3 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 p {
@@ -79,21 +85,26 @@ p {
     color: var(--color-text-focus);
 }
 
-img {
-    display: none;
-    height: 40vh;
-    z-index: 0;
-    border-radius: 10px;
-    margin-bottom: 3vh;
+.box--content-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 3vh;
-    margin-top: 5%;
-    padding-bottom: 10%;
+    width: 50%;
+    padding: 5vh;
+    border-radius: 10px;
+
+    background-color: var(--color-background-primary);
 }
 
 .links {
@@ -104,9 +115,11 @@ img {
 }
 
 a {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--color-text-secondary)
 }
 
@@ -114,42 +127,22 @@ a:hover {
     color: var(--color-text-primary);
 }
 
-
-@media (min-width: 600px) and (max-width: 1365px) {
-    .swiper {
-        margin: 0 5vw;
-    }
-
-    img {
-        display: block;
-        height: 400px;
-    }
+.tags--technologies {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 0.5vw;
 }
 
+tag {
+    color: var(--color-background-primary);
+    font-weight: 600;
+    text-wrap: nowrap;
 
+    background-color: var(--color-text-secondary);
+    padding: 0.3rem;
+    border-radius: 5px;
 
-@media (min-width: 1366px) {
-    section {
-        padding: 4% 10%;
-    }
-
-    img {
-        display: block;
-    }
-
-    h3 {
-        font-weight: normal;
-    }
-
-    .card {
-        gap: 2vh;
-        margin-top: 2%;
-        padding-bottom: 3%;
-    }
-
-    p,
-    a {
-        font-size: 1.25rem;
-    }
+    cursor: pointer;
 }
 </style>
