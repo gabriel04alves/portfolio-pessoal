@@ -27,7 +27,7 @@
         </div>
         <hr>
         <div class="container--send-email">
-            <h1 class="title--contacts">Me envie um email!</h1>
+            <h1 class="title--contacts">Deixe seu recado!</h1>
             <div class="form--contact">
                 <form ref="form" @submit.prevent="handleSendEmail">
                     <input type="text" name="from_name" placeholder="Seu Nome" required>

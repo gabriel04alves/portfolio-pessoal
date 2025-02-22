@@ -97,6 +97,7 @@ p {
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     gap: 3vh;
@@ -144,5 +145,13 @@ tag {
     border-radius: 5px;
 
     cursor: pointer;
+}
+
+@media (min-width: 0) and (max-width: 999px) {
+    .card {
+        width: 75%;
+        height: 40vh;
+        padding: 1vh 2vw;
+    }
 }
 </style>
