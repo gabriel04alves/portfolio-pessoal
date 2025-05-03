@@ -1,7 +1,6 @@
 <template>
   <Header />
   <PresentationComponent />
-  <AboutmeComponent />
   <SkillsComponent />
   <FormationComponent />
   <ProfissionalExpComponent />
@@ -13,7 +12,6 @@
 <script>
 import Header from "./components/layout/HeaderComponent.vue";
 import PresentationComponent from "./components/sections/PresentationComponent.vue";
-import AboutmeComponent from "./components/sections/AboutmeComponent.vue";
 import SkillsComponent from "./components/sections/SkillsComponent.vue";
 import FormationComponent from "./components/sections/FormationComponent.vue";
 import ProjectsComponent from "./components/sections/ProjectsComponent.vue";
@@ -25,7 +23,6 @@ export default {
   components: {
     Header,
     PresentationComponent,
-    AboutmeComponent,
     SkillsComponent,
     FormationComponent,
     ProfissionalExpComponent,

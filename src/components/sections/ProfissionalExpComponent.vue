@@ -41,6 +41,8 @@ section {
     padding: 5% 25%;
     font-size: 1rem;
     color: var(--color-text-primary);
+    background-color: var(--color-background-secondary);
+
 }
 
 .container--exp_prof {

@@ -63,6 +63,8 @@ section {
     flex-flow: row wrap;
     padding: 10%;
     gap: 2vh;
+
+    background-color: var(--color-background-secondary);
 }
 
 .title--contacts {
@@ -106,7 +108,7 @@ textarea {
     border: solid 0.5px var(--color-text-primary);
     border-radius: 5px;
 
-    background-color: var(--color-background-primary);
+    background-color: var(--color-background-secondary);
 
     font-size: 0.9rem;
     color: var(--color-text-primary);

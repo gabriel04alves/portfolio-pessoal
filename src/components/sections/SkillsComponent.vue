@@ -61,6 +61,7 @@ section {
     margin-bottom: 5vh;
     padding: 10%;
     color: var(--color-text-primary);
+    background-color: var(--color-background-secondary);
     font-size: 1rem;
 
 }
@@ -88,7 +89,7 @@ img {
 
 @media (min-width: 600px) {
     section {
-        padding: 3% 15%;
+        padding: 5% 15%;
         font-size: 1.25rem;
     }
 

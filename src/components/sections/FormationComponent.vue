@@ -49,7 +49,6 @@
 <style scoped>
 section {
     padding: 10%;
-    background-color: var(--color-background-secondary);
     color: var(--color-text-primary);
 }
 

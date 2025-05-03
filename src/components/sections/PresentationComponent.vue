@@ -41,7 +41,7 @@ export default {
         ref: title,
         strings: [
           {
-            text: "<b>Olá, meu nome é Gabriel Alves...</b>",
+            text: "<b>Opa, meu nome é Gabriel Alves...</b>",
             pause: 1500,
           },
         ],
@@ -51,7 +51,9 @@ export default {
         ref: subtitle,
         strings: [
           {
-            text: `Sou um desenvolvedor de software em constante aprimoramento. Aqui, você poderá descobrir mais sobre mim. <i class="fa-regular fa-lightbulb"></i>`,
+            text: `Atualmente, sou estudante de Sistemas de Informação e tenho formação técnica em Informática. Desenvolvo com
+      JavaScript e TypeScript, utilizando o framework Vue.js, além de Python com Django Rest Framework. Também, me
+      interesso por arquitetura de software, inteligência artificial, análise de dados e desenvolvimento pessoal.`,
             pause: 4900,
           },
         ],
