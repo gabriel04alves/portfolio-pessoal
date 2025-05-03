@@ -5,13 +5,15 @@
     </a>
     <div class="header-container-items">
       <div class="header_links">
-        <a href="#section-about_me">Sobre mim</a>
-        <a href="#section-stack">Stack</a>
-        <a href="#academic-education">Formação</a>
-        <a href="#section-profissional_exp">Experiência</a>
-        <a href="#section-projects">Projetos</a>
-        <a href="#section-contacts">Contatos</a>
+        <a href="#section-stack">{{ t('stack') }}</a>
+        <a href="#academic-education">{{ t('education') }}</a>
+        <a href="#section-profissional_exp">{{ t('experience') }}</a>
+        <a href="#section-projects">{{ t('projects') }}</a>
+        <a href="#section-contacts">{{ t('contacts') }}</a>
       </div>
+      <button @click="switchLanguage" class="btn-lang">
+        {{ languageStore.currentLanguage === 'pt' ? '🇧🇷' : '🇺🇸' }}
+      </button>
       <button @click="switchTheme">
         <i v-if="themeStore.currentTheme === 'dark'" class="fas fa-moon icon--change-theme"></i>
         <i v-else class="fas fa-sun icon--change-theme"></i>
@@ -22,13 +24,20 @@
 
 <script>
 import { useThemeStore } from "../../stores/themeStore.js";
+import { useLanguageStore } from "../../stores/languageStore.js";
+import { useI18n } from "../../locales/i18n.js";
 
 export default {
   setup() {
     const themeStore = useThemeStore();
+    const languageStore = useLanguageStore();
+    const { t } = useI18n();
     return {
       themeStore,
       switchTheme: themeStore.switchTheme,
+      languageStore,
+      switchLanguage: languageStore.switchLanguage,
+      t,
     };
   },
 };
@@ -83,6 +92,17 @@ button {
   color: var(--color-text-primary);
 }
 
+.btn-lang {
+  border: none;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  /* Increased font size for better emoji display */
+  margin-right: 2vw;
+  cursor: pointer;
+  /* Added padding for better touch target */
+}
+
 @media (min-width: 600px) and (max-width: 1365px) {
   header {
     font-size: 1.4rem;
@@ -94,6 +114,7 @@ button {
   }
 
 }
+
 
 @media (min-width: 1366px) {
   header {
