@@ -1,46 +1,22 @@
 <template>
     <section id="academic-education">
-        <div>
-            <h1>
-                <b>
-                    Formação acadêmica
-                </b>
-            </h1>
+        <h1 class="title--education">Formação acadêmica</h1>
+        <div class="container--education">
+            <div class="item--line-1">
+                <img class="icon--logo_institution"
+                    src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
+                    alt="Logo IFC">
+                <h3 class="title--course">Bacharelado em Sistemas de Informação</h3>
+                <p class="title--date">2023 - Em andamento</p>
+            </div>
+            <div class="item--line-1">
+                <img class="icon--logo_institution"
+                    src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
+                    alt="Logo IFC">
+                <h3 class="title--course">Téc. Informática</h3>
+                <p class="title--date">2020 - 2022</p>
+            </div>
         </div>
-        <ul>
-            <li>
-                <div class="logo">
-                    <img src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
-                        alt="">
-                </div>
-                <div>
-                    <p>
-                        <b>
-                            Téc. Informática
-                        </b>
-                    </p>
-                    <p>
-                        2022 - IFC
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="logo">
-                    <img src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
-                        alt="">
-                </div>
-                <div>
-                    <p>
-                        <b>
-                            Bacharelado em Sistemas de Informação
-                        </b>
-                    </p>
-                    <p>
-                        Em andamento - IFC
-                    </p>
-                </div>
-            </li>
-        </ul>
     </section>
 </template>
 
@@ -48,64 +24,78 @@
 
 <style scoped>
 section {
-    padding: 10%;
+    padding: 5% 15%;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column;
     color: var(--color-text-primary);
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 1vh;
 }
 
-h1 b {
-    font-size: 1.75rem;
+.container--education {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3vh;
+    margin-top: 5vh;
 }
 
-p b {
+
+.item--line-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     font-size: 1.25rem;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    gap: 5vw;
+.title--course {
+    text-align: left;
+    font-weight: 500;
+    width: 100%;
+    margin-left: 1vw;
+    padding: 1vh;
+    text-wrap: nowrap;
 }
 
-ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 3vh;
+.title--date {
+    width: 100%;
+    color: var(--color-text-secondary);
+    text-align: right;
+    text-wrap: nowrap;
 }
 
-.logo img {
-    margin-bottom: 2vh;
-}
-
-img {
-    padding: 1rem 4rem;
-    width: 40%;
+.icon--logo_institution {
+    width: 5vh;
     background-color: var(--color-image-background);
+    padding: 0.5vh;
 }
 
-
-@media (min-width: 600px) and (max-width: 1365px) {
+@media (max-width: 1365px) {
     section {
-        padding: 10% 0%;
-    }
-}
-
-
-
-@media (min-width: 1366px) {
-    section {
-        padding: 5%;
+        padding: 25%;
     }
 
-    h1 b {
-        font-size: 2rem;
+    .container--education {
+        gap: 3vh;
+    }
+
+    .item--line-1 {
+        flex-flow: wrap;
+        justify-content: start;
+    }
+
+    .icon--logo_institution {
+        width: 5vh;
+    }
+
+    .title--course,
+    .title--date {
+        width: min-content;
+        font-size: 1rem;
+        margin-bottom: 1vh;
     }
 }
 </style>
