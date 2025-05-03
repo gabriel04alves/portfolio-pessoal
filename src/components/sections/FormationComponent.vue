@@ -36,7 +36,7 @@ section {
 
 h1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .container--education {

@@ -47,46 +47,45 @@ interesso por arquitetura de software, inteligência artificial, análise de dad
     curriculum: "Currículo",
   },
   en: {
-    // Formation
-    education: "Academic Education",
-    course_bachelor: "Bachelor in Information Systems",
-    course_tech: "Technical in Informatics",
-    in_progress: "In progress",
+    // Education
+    education: "Education",
+    course_bachelor: "Bachelor's in Information Systems",
+    course_tech: "Technical Degree in Informatics",
+    in_progress: "Ongoing",
 
     // Professional Experience
-    experience: "Experience",
+    experience: "Work Experience",
     job_dev: "Software Developer",
-    job_prof_dev: "Professional Development",
+    job_prof_dev: "Self-Development",
     job_intern: "Support Intern",
-    current: "Current",
+    current: "Present",
     desc_dev:
-      "I work in software development, participating in projects aimed at meeting the demands of the IFC community. I am involved in all stages of the development process, from requirements analysis to final delivery. In addition to development, I apply agile methodologies to organize workflow and contribute to continuous project improvement.",
+      "I work in software development, contributing to projects that serve the IFC community. I'm involved in every stage of the development lifecycle, from requirements analysis to final delivery. I also apply agile methodologies to streamline workflows and drive continuous improvement.",
     desc_prof_dev:
-      "Period dedicated to improving my software development skills, focusing on JavaScript, TypeScript, Python, and SQL. During this time, I participated in academic projects, completed complementary courses, improved personal projects, and explored new technologies to expand my knowledge. The goal of this period is to further prepare myself for future opportunities.",
+      "A period focused on enhancing my software development skills, with emphasis on JavaScript, TypeScript, Python, and SQL. I took part in academic projects, completed supplementary courses, improved personal projects, and explored new technologies to broaden my expertise. This phase was aimed at preparing myself for future professional opportunities.",
     desc_intern:
-      "I worked in customer service and technical support, handling sales, plan adjustments, and solving hardware and software issues. I was also responsible for reporting bugs, contributing to system improvements, and organizing data on client platforms.",
+      "Provided customer service and technical support, including sales, plan adjustments, and resolving hardware/software issues. I also reported bugs, suggested system improvements, and organized data across client platforms.",
 
     // Contacts
-    contacts: "Contacts",
-    send_message: "Leave your message!",
+    contacts: "Get in touch",
+    send_message: "Send a Message!",
     send: "Send",
     your_name: "Your Name",
     your_email: "Your Email",
     your_message: "Your Message",
 
     // Presentation
-    presentation_title: "<b>Hi, my name is Gabriel Alves...</b>",
-    presentation_subtitle: `Currently, I am an Information Systems student and have a technical degree in Informatics. I develop with
-JavaScript and TypeScript using the Vue.js framework, as well as Python with Django Rest Framework. I am also interested in software architecture, artificial intelligence, data analysis, and personal development.`,
-    presentation_button: "Learn more",
+    presentation_title: "<b>Hey there! I'm Gabriel Alves.</b>",
+    presentation_subtitle: `I'm currently an Information Systems student with a technical degree in Informatics. I develop using JavaScript and TypeScript with the Vue.js framework, as well as Python with Django Rest Framework. I'm also passionate about software architecture, artificial intelligence, data analysis, and personal development.`,
+    presentation_button: "Learn More",
 
     // Projects
     projects: "Projects",
-    see_on_github: "See on GitHub",
-    live_demo: "Live Demo",
+    see_on_github: "View on GitHub",
+    live_demo: "Live Preview",
 
     // Header
-    stack: "Stack",
+    stack: "Tech Stack",
     curriculum: "Resume",
   },
 };
