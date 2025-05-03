@@ -106,6 +106,7 @@ p {
     border-radius: 10px;
 
     background-color: var(--color-background-primary);
+    color: var(--color-text-focus);
 }
 
 .links {
