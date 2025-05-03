@@ -1,6 +1,6 @@
 <template>
     <section id="section-projects">
-        <h1><b>Projetos</b></h1>
+        <h1><b>{{ t('projects') }}</b></h1>
         <swiper class="swiper" :modules="modules" :slides-per-view="1" :space-between="50" navigation :loop="true"
             :pagination="{ clickable: true }" :autoplay="{ delay: 6000, disableOnInteraction: false }"
             @swiper="onSwiper" @slideChange="onSlideChange">
@@ -15,12 +15,12 @@
                         <div class="links">
                             <a :href="project.github" target="_blank">
                                 <i class="fab fa-github"></i>
-                                Veja no GitHub
+                                {{ t('see_on_github') }}
                             </a>
                             <a v-if="project.deploy && project.deploy !== 'None'" :href="project.deploy" target="_blank"
                                 rel="noopener noreferrer">
                                 <i class="fa fa-link"></i>
-                                Demo ao vivo
+                                {{ t('live_demo') }}
                             </a>
                         </div>
                     </div>
@@ -31,32 +31,32 @@
 
 </template>
 
-<script>
+<script setup>
+import { onMounted, ref } from "vue";
 import { swiperModules, SwiperComponents } from '../../services/swiperConfig';
 import { fetchProjects } from '../../services/getProjects';
+import { useI18n } from "../../locales/i18n";
 
+const { t } = useI18n();
+const projects = ref([]);
+const modules = swiperModules;
+
+const loadProjects = async () => {
+    try {
+        projects.value = await fetchProjects();
+    } catch (error) {
+        console.error('Error loading projects:', error);
+    }
+};
+
+onMounted(loadProjects);
+</script>
+
+<script>
 export default {
     components: {
         ...SwiperComponents,
-    },
-    data() {
-        return {
-            projects: [],
-            modules: swiperModules,
-        };
-    },
-    methods: {
-        async loadProjects() {
-            try {
-                this.projects = await fetchProjects();
-            } catch (error) {
-                console.error('Error loading projects:', error);
-            }
-        },
-    },
-    mounted() {
-        this.loadProjects();
-    },
+    }
 };
 </script>
 

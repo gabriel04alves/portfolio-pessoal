@@ -3,7 +3,7 @@
         <div class="container--contacts">
             <h1 class="title--contacts">
                 <b>
-                    Contatos
+                    {{ t('contacts') }}
                 </b>
             </h1>
             <div class="items--contacts">
@@ -27,15 +27,15 @@
         </div>
         <hr>
         <div class="container--send-email">
-            <h1 class="title--contacts">Deixe seu recado!</h1>
+            <h1 class="title--contacts">{{ t('send_message') }}</h1>
             <div class="form--contact">
                 <form ref="form" @submit.prevent="handleSendEmail">
-                    <input type="text" name="from_name" placeholder="Seu Nome" required>
-                    <input type="email" name="from_email" placeholder="Seu Email" required>
-                    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                    <input type="text" name="from_name" :placeholder="t('your_name')" required>
+                    <input type="email" name="from_email" :placeholder="t('your_email')" required>
+                    <textarea name="message" :placeholder="t('your_message')" required></textarea>
                     <button class="btn--submit-contact-form" type="submit">
                         <i class="fa fa-paper-plane"></i>
-                        Enviar
+                        {{ t('send') }}
                     </button>
                 </form>
             </div>
@@ -43,18 +43,18 @@
     </section>
 </template>
 
-
 <script setup>
 import { ref } from "vue";
 import { sendEmail } from "../../services/emailService";
+import { useI18n } from "../../locales/i18n";
 
+const { t } = useI18n();
 const form = ref(null);
 
 const handleSendEmail = async () => {
     await sendEmail(form.value);
 };
 </script>
-
 
 <style scoped>
 section {

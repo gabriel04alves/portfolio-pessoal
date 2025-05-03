@@ -11,11 +11,11 @@
           <i class="fab fa-github"></i> Github
         </a>
         <a href="https://linkedin.com/in/gabriel04alves" target="_blank">
-          <i class="fab fa-linkedin"></i> Linkedin
+          <i class="fab fa-linkedin"></i> LinkedIn
         </a>
         <a href="https://drive.usercontent.google.com/u/0/uc?id=1EVhcHgJ0QDU9li_SDxGYnCjTsHVWWZKQ&export=download"
           target="_blank">
-          <i class="far fa-file"></i> Currículo
+          <i class="far fa-file"></i> {{ t('curriculum') }}
         </a>
       </div>
     </div>
@@ -27,43 +27,54 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import { useTypewriter } from "../../services/useTypewriter";
+import { useI18n } from "../../locales/i18n";
 
 export default {
   name: "PresentationComponent",
   setup() {
     const title = ref(null);
     const subtitle = ref(null);
+    const { t, lang } = useI18n();
 
-    useTypewriter([
-      {
-        ref: title,
-        strings: [
-          {
-            text: "<b>Opa, meu nome é Gabriel Alves...</b>",
-            pause: 1500,
-          },
-        ],
-        options: { loop: false, delay: 75 },
-      },
-      {
-        ref: subtitle,
-        strings: [
-          {
-            text: `Atualmente, sou estudante de Sistemas de Informação e tenho formação técnica em Informática. Desenvolvo com
-      JavaScript e TypeScript, utilizando o framework Vue.js, além de Python com Django Rest Framework. Também, me
-      interesso por arquitetura de software, inteligência artificial, análise de dados e desenvolvimento pessoal.`,
-            pause: 4900,
-          },
-        ],
-        options: { loop: false, delay: 75 },
-      },
-    ]);
+    const runTypewriter = () => {
+      useTypewriter([
+        {
+          ref: title,
+          strings: [
+            {
+              text: t("presentation_title"),
+              pause: 1500,
+            },
+          ],
+          options: { loop: false, delay: 75 },
+        },
+        {
+          ref: subtitle,
+          strings: [
+            {
+              text: t("presentation_subtitle"),
+              pause: 4900,
+            },
+          ],
+          options: { loop: false, delay: 75 },
+        },
+      ]);
+    };
+
+    watch(lang, () => {
+      if (title.value) title.value.innerHTML = "";
+      if (subtitle.value) subtitle.value.innerHTML = "";
+      setTimeout(() => {
+        runTypewriter();
+      }, 0);
+    }, { immediate: true });
 
     return {
       title,
       subtitle,
+      t,
     };
   },
 };
