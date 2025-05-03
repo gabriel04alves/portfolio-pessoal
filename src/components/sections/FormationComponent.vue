@@ -1,26 +1,29 @@
 <template>
     <section id="academic-education">
-        <h1 class="title--education">Formação acadêmica</h1>
+        <h1 class="title--education">{{ t('education') }}</h1>
         <div class="container--education">
             <div class="item--line-1">
                 <img class="icon--logo_institution"
                     src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
                     alt="Logo IFC">
-                <h3 class="title--course">Bacharelado em Sistemas de Informação</h3>
-                <p class="title--date">2023 - Em andamento</p>
+                <h3 class="title--course">{{ t('course_bachelor') }}</h3>
+                <p class="title--date">2023 - {{ t('in_progress') }}</p>
             </div>
             <div class="item--line-1">
                 <img class="icon--logo_institution"
                     src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
                     alt="Logo IFC">
-                <h3 class="title--course">Téc. Informática</h3>
+                <h3 class="title--course">{{ t('course_tech') }}</h3>
                 <p class="title--date">2020 - 2022</p>
             </div>
         </div>
     </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { useI18n } from "../../locales/i18n";
+const { t } = useI18n();
+</script>
 
 <style scoped>
 section {
@@ -33,7 +36,7 @@ section {
 
 h1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .container--education {

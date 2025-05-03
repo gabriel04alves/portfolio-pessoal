@@ -1,53 +1,44 @@
 <template>
     <section id="section-profissional_exp">
-        <h1 class="title--exp_prof">Experiência </h1>
+        <h1 class="title--exp_prof">{{ t('experience') }}</h1>
         <div class="container--exp_prof">
             <div class="item--exp_prof">
                 <div class="item--line-1">
                     <img class="icon--logo_enterprise"
                         src="https://avatars.githubusercontent.com/u/105930636?s=280&v=4"></img>
-                    <h3 class="title--position">Desenvolvedor de Software</h3>
-                    <p class="title--date"> Nov 2024 - Atualmente</p>
+                    <h3 class="title--position">{{ t('job_dev') }}</h3>
+                    <p class="title--date"> Nov 2024 - {{ t('current') }}</p>
                 </div>
-                <p class="description--exp_prof">Atuo no desenvolvimento de software, participando de projetos que visam
-                    atender às demandas da comunidade do IFC. Estou envolvido em todas as etapas do processo de
-                    desenvolvimento, desde a análise de requisitos até a entrega da solução final.
-                    Além do desenvolvimento, aplico metodologias ágeis para organizar o fluxo de trabalho e contribuir
-                    para a melhoria contínua dos projetos.</p>
+                <p class="description--exp_prof">{{ t('desc_dev') }}</p>
             </div>
             <div class="item--exp_prof">
                 <div class="item--line-1">
                     <i class="icon--logo_enterprise fa-regular fa-calendar"></i>
-                    <h3 class="title--position">Desenvolvimento profissional</h3>
+                    <h3 class="title--position">{{ t('job_prof_dev') }}</h3>
                     <p class="title--date"> Jan 2024 - Out 2024</p>
                 </div>
-                <p class="description--exp_prof">Período dedicado ao aprimoramento das minhas habilidades em
-                    desenvolvimento de software, com foco em
-                    JavaScript, TypeScript, Python e SQL. Durante esse tempo, participei de projetos acadêmicos,
-                    realizei formações complementares, aperfeiçoei projetos pessoais e explorei novas tecnologias para
-                    expandir meu conhecimento. O objetivo desse período é me preparar ainda mais para futuras
-                    oportunidades.</p>
+                <p class="description--exp_prof">{{ t('desc_prof_dev') }}</p>
             </div>
             <div class="item--exp_prof">
                 <div class="item--line-1">
                     <img class="icon--logo_enterprise"
                         src="https://multipedidos.com.br/wp-content/uploads/2022/02/marca-mp-vertical-colorida-405x400-1.png"
                         alt="">
-                    <h3 class="title--position">Estágiario de suporte</h3>
+                    <h3 class="title--position">{{ t('job_intern') }}</h3>
                     <p class="title--date"> Set 2023 - Jan 2024</p>
                 </div>
                 <p class="description--exp_prof">
-                    Atuei no atendimento ao cliente e suporte técnico, realizando vendas, ajustes de planos e
-                    solucionando problemas de hardware e software. Também fui responsável por reportar bugs, contribuir
-                    para melhorias no sistema e organizar dados nas plataformas dos clientes.
+                    {{ t('desc_intern') }}
                 </p>
             </div>
-
         </div>
     </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { useI18n } from "../../locales/i18n";
+const { t } = useI18n();
+</script>
 
 <style scoped>
 section {
