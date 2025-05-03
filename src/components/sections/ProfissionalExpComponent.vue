@@ -5,6 +5,32 @@
             <div class="item--exp_prof">
                 <div class="item--line-1">
                     <img class="icon--logo_enterprise"
+                        src="https://avatars.githubusercontent.com/u/105930636?s=280&v=4"></img>
+                    <h3 class="title--position">Desenvolvedor de Software</h3>
+                    <p class="title--date"> Nov 2024 - Atualmente</p>
+                </div>
+                <p class="description--exp_prof">Atuo no desenvolvimento de software, participando de projetos que visam
+                    atender às demandas da comunidade do IFC. Estou envolvido em todas as etapas do processo de
+                    desenvolvimento, desde a análise de requisitos até a entrega da solução final.
+                    Além do desenvolvimento, aplico metodologias ágeis para organizar o fluxo de trabalho e contribuir
+                    para a melhoria contínua dos projetos.</p>
+            </div>
+            <div class="item--exp_prof">
+                <div class="item--line-1">
+                    <i class="icon--logo_enterprise fa-regular fa-calendar"></i>
+                    <h3 class="title--position">Desenvolvimento profissional</h3>
+                    <p class="title--date"> Jan 2024 - Out 2024</p>
+                </div>
+                <p class="description--exp_prof">Período dedicado ao aprimoramento das minhas habilidades em
+                    desenvolvimento de software, com foco em
+                    JavaScript, TypeScript, Python e SQL. Durante esse tempo, participei de projetos acadêmicos,
+                    realizei formações complementares, aperfeiçoei projetos pessoais e explorei novas tecnologias para
+                    expandir meu conhecimento. O objetivo desse período é me preparar ainda mais para futuras
+                    oportunidades.</p>
+            </div>
+            <div class="item--exp_prof">
+                <div class="item--line-1">
+                    <img class="icon--logo_enterprise"
                         src="https://multipedidos.com.br/wp-content/uploads/2022/02/marca-mp-vertical-colorida-405x400-1.png"
                         alt="">
                     <h3 class="title--position">Estágiario de suporte</h3>
@@ -15,19 +41,6 @@
                     solucionando problemas de hardware e software. Também fui responsável por reportar bugs, contribuir
                     para melhorias no sistema e organizar dados nas plataformas dos clientes.
                 </p>
-            </div>
-            <div class="item--exp_prof">
-                <div class="item--line-1">
-                    <i class="icon--logo_enterprise fa-regular fa-calendar"></i>
-                    <h3 class="title--position">Desenvolvimento profissional</h3>
-                    <p class="title--date"> Jan 2024 - o momento</p>
-                </div>
-                <p class="description--exp_prof">Período dedicado ao aprimoramento das minhas habilidades em
-                    desenvolvimento de software, com foco em
-                    JavaScript, TypeScript, Python e SQL. Durante esse tempo, participei de projetos acadêmicos,
-                    realizei formações complementares, aperfeiçoei projetos pessoais e explorei novas tecnologias para
-                    expandir meu conhecimento. O objetivo desse período é me preparar ainda mais para futuras
-                    oportunidades.</p>
             </div>
 
         </div>
