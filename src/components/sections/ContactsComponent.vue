@@ -129,7 +129,7 @@ textarea {
 
 @media (min-width: 0) and (max-width: 999px) {
     section {
-        padding: 5%;
+        padding: 15%;
         gap: 4vh;
         justify-content: center;
     }

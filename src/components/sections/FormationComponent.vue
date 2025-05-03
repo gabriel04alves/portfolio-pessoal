@@ -37,65 +37,61 @@ h1 {
 
 .container--education {
     display: flex;
-    flex-flow: column wrap;
-    gap: 3vh;
-    margin-top: 5vh;
+    flex-flow: column;
+    gap: 2rem;
+    margin-top: 2rem;
 }
-
 
 .item--line-1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
     width: 100%;
-    font-size: 1.25rem;
 }
 
 .title--course {
-    text-align: left;
     font-weight: 500;
-    width: 100%;
-    margin-left: 1vw;
-    padding: 1vh;
-    text-wrap: nowrap;
+    flex: 1;
 }
 
 .title--date {
-    width: 100%;
     color: var(--color-text-secondary);
+    min-width: 120px;
     text-align: right;
-    text-wrap: nowrap;
 }
 
 .icon--logo_institution {
-    width: 5vh;
+    width: 48px;
+    height: 48px;
     background-color: var(--color-image-background);
-    padding: 0.5vh;
+    padding: 4px;
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 768px) {
     section {
-        padding: 25%;
-    }
-
-    .container--education {
-        gap: 3vh;
+        padding: 5% 10%;
     }
 
     .item--line-1 {
-        flex-flow: wrap;
-        justify-content: start;
+        flex-wrap: wrap;
+
+    }
+
+    .title--course {
+        width: calc(100% - 60px);
+        order: 1;
     }
 
     .icon--logo_institution {
-        width: 5vh;
+        width: 40px;
+        height: 40px;
+        order: 0;
     }
 
-    .title--course,
     .title--date {
-        width: min-content;
-        font-size: 1rem;
-        margin-bottom: 1vh;
+        margin-left: 52px;
+        order: 2;
+        min-width: auto;
     }
 }
 </style>

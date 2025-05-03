@@ -51,85 +51,108 @@
 
 <style scoped>
 section {
-    padding: 5% 25%;
+    padding: 5% 15%;
     font-size: 1rem;
     color: var(--color-text-primary);
     background-color: var(--color-background-secondary);
-
 }
 
 .container--exp_prof {
     display: flex;
     flex-flow: column wrap;
-    gap: 3vh;
-    margin-top: 5vh;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.item--exp_prof {
+    margin-top: 1vh;
 }
 
 .title--exp_prof {
     text-align: center;
-    font-size: 1.75rem;
+    font-size: clamp(1.5rem, 2.5vw, 1.75rem);
     color: var(--color-text-primary);
 }
 
 .item--line-1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
     width: 100%;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
 }
 
 .title--position {
     text-align: left;
     font-weight: 500;
-    width: 100%;
-    margin-left: 1vw;
-    padding: 1vh;
-    text-wrap: nowrap;
+    flex: 1;
+    padding: 0.5rem;
 }
 
 .description--exp_prof {
-    margin-top: 1vh;
+    margin-top: 1rem;
     color: var(--color-text-secondary);
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    line-height: 1.5;
 }
 
 .title--date {
-    width: 100%;
     color: var(--color-text-secondary);
     text-align: right;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .icon--logo_enterprise {
-    width: 5vh;
-    font-size: 3vh;
+    width: clamp(2.5rem, 4vw, 3rem);
+    height: auto;
+    font-size: clamp(2rem, 3vw, 2.5rem);
     color: var(--color-accent);
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1024px) {
     section {
-        padding: 10% 12%;
+        padding: 5% 15%;
     }
+}
 
-    .container--exp_prof {
-        gap: 3vh;
+@media (max-width: 768px) {
+    section {
+        padding: 8% 15%;
     }
 
     .item--line-1 {
-        flex-flow: wrap;
-        justify-content: start;
+        flex-wrap: wrap;
     }
 
-    .icon--logo_enterprise {
-        width: 5vh;
+    .title--position {
+        order: 1;
+        width: calc(100% - 4rem);
     }
 
-    .title--position,
     .title--date {
-        width: min-content;
-        font-size: 1rem;
-        margin-bottom: 1vh;
+        order: 2;
+        width: 100%;
+        text-align: left;
+        padding-left: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 10% 10%;
+    }
+
+    .title--position {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .title--date {
+        padding-left: 0;
+    }
+
+    .description--exp_prof {
+        font-size: 0.9rem;
     }
 }
 </style>
