@@ -24,7 +24,7 @@
 
 <style scoped>
 section {
-    padding: 5% 15%;
+    padding: 1% 15% 5% 15%;
     font-size: 1rem;
     display: flex;
     flex-flow: column;
@@ -33,6 +33,7 @@ section {
 
 h1 {
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .container--education {
