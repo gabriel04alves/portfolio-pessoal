@@ -7,8 +7,8 @@
             <swiper-slide v-for="project in projects" :key="project.id">
                 <div class="box--content-main">
                     <div class="card">
-                        <h3>{{ project.name }}</h3>
-                        <p>{{ project.description }}</p>
+                        <h3>{{ lang === 'pt' ? project.name_pt : project.name_en }}</h3>
+                        <p>{{ lang === 'pt' ? project.description_pt : project.description_en }}</p>
                         <div class="tags--technologies">
                             <tag v-for="technology in project.technologies" :key="technology">{{ technology }}</tag>
                         </div>
@@ -37,9 +37,15 @@ import { swiperModules, SwiperComponents } from '../../services/swiperConfig';
 import { fetchProjects } from '../../services/getProjects';
 import { useI18n } from "../../locales/i18n";
 
-const { t } = useI18n();
+const { t, lang } = useI18n();
 const projects = ref([]);
 const modules = swiperModules;
+
+defineOptions({
+    components: {
+        ...SwiperComponents
+    }
+});
 
 const loadProjects = async () => {
     try {
@@ -52,18 +58,15 @@ const loadProjects = async () => {
 onMounted(loadProjects);
 </script>
 
-<script>
-export default {
-    components: {
-        ...SwiperComponents,
-    }
-};
-</script>
-
 <style scoped>
 section {
     padding: 5% 0%;
     color: var(--color-text-primary);
+
+}
+
+h1 {
+    text-align: center;
 
 }
 
