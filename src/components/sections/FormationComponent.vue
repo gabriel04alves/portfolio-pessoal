@@ -1,46 +1,22 @@
 <template>
     <section id="academic-education">
-        <div>
-            <h1>
-                <b>
-                    Formação acadêmica
-                </b>
-            </h1>
+        <h1 class="title--education">Formação acadêmica</h1>
+        <div class="container--education">
+            <div class="item--line-1">
+                <img class="icon--logo_institution"
+                    src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
+                    alt="Logo IFC">
+                <h3 class="title--course">Bacharelado em Sistemas de Informação</h3>
+                <p class="title--date">2023 - Em andamento</p>
+            </div>
+            <div class="item--line-1">
+                <img class="icon--logo_institution"
+                    src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
+                    alt="Logo IFC">
+                <h3 class="title--course">Téc. Informática</h3>
+                <p class="title--date">2020 - 2022</p>
+            </div>
         </div>
-        <ul>
-            <li>
-                <div class="logo">
-                    <img src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
-                        alt="">
-                </div>
-                <div>
-                    <p>
-                        <b>
-                            Téc. Informática
-                        </b>
-                    </p>
-                    <p>
-                        2022 - IFC
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="logo">
-                    <img src="https://descomplica-pae-backend.s3.amazonaws.com/logotipo_ifc_removebg_preview_be413df28b.png"
-                        alt="">
-                </div>
-                <div>
-                    <p>
-                        <b>
-                            Bacharelado em Sistemas de Informação
-                        </b>
-                    </p>
-                    <p>
-                        Em andamento - IFC
-                    </p>
-                </div>
-            </li>
-        </ul>
     </section>
 </template>
 
@@ -48,65 +24,75 @@
 
 <style scoped>
 section {
-    padding: 10%;
-    background-color: var(--color-background-secondary);
+    padding: 1% 15% 5% 15%;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column;
     color: var(--color-text-primary);
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 1vh;
+    font-size: 1.5rem;
 }
 
-h1 b {
-    font-size: 1.75rem;
-}
-
-p b {
-    font-size: 1.25rem;
-}
-
-ul {
+.container--education {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    gap: 5vw;
+    flex-flow: column;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-ul li {
+.item--line-1 {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 3vh;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
 }
 
-.logo img {
-    margin-bottom: 2vh;
+.title--course {
+    font-weight: 500;
+    flex: 1;
 }
 
-img {
-    padding: 1rem 4rem;
-    width: 40%;
+.title--date {
+    color: var(--color-text-secondary);
+    min-width: 120px;
+    text-align: right;
+}
+
+.icon--logo_institution {
+    width: 48px;
+    height: 48px;
     background-color: var(--color-image-background);
+    padding: 4px;
 }
 
-
-@media (min-width: 600px) and (max-width: 1365px) {
+@media (max-width: 768px) {
     section {
-        padding: 10% 0%;
-    }
-}
-
-
-
-@media (min-width: 1366px) {
-    section {
-        padding: 5%;
+        padding: 5% 10%;
     }
 
-    h1 b {
-        font-size: 2rem;
+    .item--line-1 {
+        flex-wrap: wrap;
+
+    }
+
+    .title--course {
+        width: calc(100% - 60px);
+        order: 1;
+    }
+
+    .icon--logo_institution {
+        width: 40px;
+        height: 40px;
+        order: 0;
+    }
+
+    .title--date {
+        margin-left: 52px;
+        order: 2;
+        min-width: auto;
     }
 }
 </style>

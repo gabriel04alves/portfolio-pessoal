@@ -63,7 +63,6 @@ export default {
 <style scoped>
 section {
     padding: 5% 0%;
-    background-color: var(--color-background-secondary);
     color: var(--color-text-primary);
 
 }
@@ -106,6 +105,7 @@ p {
     border-radius: 10px;
 
     background-color: var(--color-background-primary);
+    color: var(--color-text-focus);
 }
 
 .links {
