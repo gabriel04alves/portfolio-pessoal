@@ -9,6 +9,7 @@
         <a href="#academic-education">{{ t('education') }}</a>
         <a href="#section-profissional_exp">{{ t('experience') }}</a>
         <a href="#section-projects">{{ t('projects') }}</a>
+        <a href="#section-blog">{{ t('articles') }}</a>
         <a href="#section-contacts">{{ t('contacts') }}</a>
       </div>
       <button @click="switchLanguage" class="btn-lang">

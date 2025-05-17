@@ -4,7 +4,7 @@ import { useLanguageStore } from "../stores/languageStore";
 const translations = {
   pt: {
     // Formação
-    education: "Formação acadêmica",
+    education: "Formação",
     course_bachelor: "Bacharelado em Sistemas de Informação",
     course_tech: "Téc. Informática",
     in_progress: "Em andamento",
@@ -45,6 +45,9 @@ interesso por arquitetura de software, inteligência artificial, análise de dad
     // Header
     stack: "Stack",
     curriculum: "Currículo",
+
+    // Blog
+    articles: "Artigos",
   },
   en: {
     // Education
@@ -87,6 +90,9 @@ interesso por arquitetura de software, inteligência artificial, análise de dad
     // Header
     stack: "Tech Stack",
     curriculum: "Resume",
+
+    // Blog
+    articles: "Articles",
   },
 };
 

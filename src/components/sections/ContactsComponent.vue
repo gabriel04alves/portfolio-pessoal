@@ -64,7 +64,7 @@ section {
     padding: 10%;
     gap: 2vh;
 
-    background-color: var(--color-background-secondary);
+    /* background-color: var(--color-background-secondary); */
 }
 
 .title--contacts {
@@ -108,10 +108,10 @@ textarea {
     border: solid 0.5px var(--color-text-primary);
     border-radius: 5px;
 
-    background-color: var(--color-background-secondary);
+    /* background-color: var(--color-background-secondary); */
 
     font-size: 0.9rem;
-    color: var(--color-text-primary);
+    /* color: var(--color-text-primary); */
 }
 
 .btn--submit-contact-form {
