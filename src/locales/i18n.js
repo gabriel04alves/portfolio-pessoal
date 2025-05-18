@@ -4,7 +4,7 @@ import { useLanguageStore } from "../stores/languageStore";
 const translations = {
   pt: {
     // Formação
-    education: "Formação acadêmica",
+    education: "Formação",
     course_bachelor: "Bacharelado em Sistemas de Informação",
     course_tech: "Téc. Informática",
     in_progress: "Em andamento",
@@ -45,6 +45,13 @@ interesso por arquitetura de software, inteligência artificial, análise de dad
     // Header
     stack: "Stack",
     curriculum: "Currículo",
+
+    // Blog
+    articles: "Artigos",
+    view_all_posts: "Ver todos os artigos",
+    no_posts: "Nenhum artigo encontrado.",
+    back_to_articles: "Mais Artigos",
+    post_not_found: "Artigo não encontrado",
   },
   en: {
     // Education
@@ -87,6 +94,13 @@ interesso por arquitetura de software, inteligência artificial, análise de dad
     // Header
     stack: "Tech Stack",
     curriculum: "Resume",
+
+    // Blog
+    articles: "Articles",
+    view_all_posts: "View all articles",
+    no_posts: "No articles found.",
+    back_to_articles: "More articles",
+    post_not_found: "Article not found",
   },
 };
 
