@@ -1,15 +1,16 @@
 <template>
   <header>
-    <a href="#section-presentation" class="">
+    <router-link :to="{ path: '/', hash: '#section-presentation' }" class="">
       <b>Gabriel Alves</b>
-    </a>
+    </router-link>
     <div class="header-container-items">
       <div class="header_links">
-        <a href="#section-stack">{{ t('stack') }}</a>
-        <a href="#academic-education">{{ t('education') }}</a>
-        <a href="#section-profissional_exp">{{ t('experience') }}</a>
-        <a href="#section-projects">{{ t('projects') }}</a>
-        <a href="#section-contacts">{{ t('contacts') }}</a>
+        <router-link :to="{ path: '/', hash: '#section-stack' }">{{ t('stack') }}</router-link>
+        <router-link :to="{ path: '/', hash: '#academic-education' }">{{ t('education') }}</router-link>
+        <router-link :to="{ path: '/', hash: '#section-profissional_exp' }">{{ t('experience') }}</router-link>
+        <router-link :to="{ path: '/', hash: '#section-projects' }">{{ t('projects') }}</router-link>
+        <router-link :to="{ path: '/', hash: '#section-blog' }">{{ t('articles') }}</router-link>
+        <router-link :to="{ path: '/', hash: '#section-contacts' }">{{ t('contacts') }}</router-link>
       </div>
       <button @click="switchLanguage" class="btn-lang">
         {{ languageStore.currentLanguage === 'pt' ? '🇧🇷' : '🇺🇸' }}
@@ -26,6 +27,7 @@
 import { useThemeStore } from "../../stores/themeStore.js";
 import { useLanguageStore } from "../../stores/languageStore.js";
 import { useI18n } from "../../locales/i18n.js";
+import { RouterLink } from "vue-router";
 
 export default {
   setup() {
@@ -40,6 +42,7 @@ export default {
       t,
     };
   },
+  components: { RouterLink },
 };
 </script>
 
