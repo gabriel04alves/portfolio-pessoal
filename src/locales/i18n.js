@@ -48,6 +48,10 @@ interesso por arquitetura de software, inteligência artificial, análise de dad
 
     // Blog
     articles: "Artigos",
+    view_all_posts: "Ver todos os artigos",
+    no_posts: "Nenhum artigo encontrado.",
+    back_to_articles: "Mais Artigos",
+    post_not_found: "Artigo não encontrado",
   },
   en: {
     // Education
@@ -93,6 +97,10 @@ interesso por arquitetura de software, inteligência artificial, análise de dad
 
     // Blog
     articles: "Articles",
+    view_all_posts: "View all articles",
+    no_posts: "No articles found.",
+    back_to_articles: "More articles",
+    post_not_found: "Article not found",
   },
 };
 

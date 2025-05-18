@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import BlogPost from "../views/BlogPost.vue";
 import HomeView from "../views/HomeView.vue";
 
 const routes = [
@@ -9,9 +8,14 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/blog/",
+    path: "/blog",
+    name: "blog-list",
+    component: () => import("../views/BlogList.vue"),
+  },
+  {
+    path: "/blog/:slug",
     name: "blog-post",
-    component: BlogPost,
+    component: () => import("../views/BlogPost.vue"),
     props: true,
   },
 ];
