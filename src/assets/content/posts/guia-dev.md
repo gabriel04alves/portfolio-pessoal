@@ -1,8 +1,9 @@
 ---
 title: Guia do Mochileiro Dev
-date: 2025-05-24
+date: 2025-05-19
 description: Materiais de estudo e dicas para desenvolvedores.
 ---
+
 Este guia reúne recursos de estudo, em geral gratuitos, que inclue desde repositórios e cursos a podcasts e newsletters, para quem já atua ou pretende ingressar no desenvolvimento de software. Foi desenvolvido originalmente como uma seção de "dicas" no repositório principal de orientações da Fábrica de Software do IFC, mas fiquei satisfeito com o resultado e criei um distil pessoal que pretendo manter atualizado com as novidades e as melhores práticas que venho descobrindo.
 
 ---
@@ -26,6 +27,7 @@ Este guia reúne recursos de estudo, em geral gratuitos, que inclue desde reposi
 - [**Leetle**](https://leetle.app/) - Plataforma para resolver problemas de programação
 
 ---
+
 ### **Guias de Carreira e Estudos**
 
 - [**Prof. Marco André - Materiais**](https://sites.google.com/site/marcoandre/) - Materiais de estudo compilados pelo Prof. Marco André
@@ -81,6 +83,7 @@ Este guia reúne recursos de estudo, em geral gratuitos, que inclue desde reposi
 - [**Refactoring Guru**](https://refactoring.guru/design-patterns) - Padrões de design e refatoração de código
 
 ---
+
 ### Cursos para Estudo Dirigido
 
 - [**4noobs**](https://github.com/he4rt/4noobs) - Repositório da comunidade He4rt com diversos tutoriais para iniciantes
@@ -145,7 +148,6 @@ Recomendações para iniciantes:
 - Participe de hackathons e meetups
 - Assista documentários e filmes sobre tecnologia e empreendedorismo
 
-
 **Resumindo: Mantenha-se atualizado**
 
 - Leia blogs, newsletters e artigos sobre tecnologia
@@ -156,8 +158,9 @@ Recomendações para iniciantes:
 - Frequente eventos e conferências (mesmo virtuais)
 - Contribua para projetos open-source
 
---- 
-###  **Newsletters**
+---
+
+### **Newsletters**
 
 Assinar newsletters é uma excelente forma de receber conteúdo curado diretamente em seu e-mail:
 

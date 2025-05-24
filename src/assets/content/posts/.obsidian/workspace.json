@@ -6,6 +6,7 @@
       {
         "id": "d9c15e3883eadfc3",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "75df4640871b89ae",
@@ -13,34 +14,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ferramentas para Melhorar Habilidades.md",
+                "file": "instalacao-debian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ferramentas para Melhorar Habilidades"
-            }
-          },
-          {
-            "id": "736d4baab85bd0c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "guia-dev.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "guia-dev"
+              "title": "instalacao-debian"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3abd8f6b8b74e367",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "7406b509d11612dd",
@@ -197,10 +184,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7406b509d11612dd",
+  "active": "75df4640871b89ae",
   "lastOpenFiles": [
-    "guia-dev.md",
+    "Pasted image 20250524170252.png",
+    "Pasted image 20250524165651.png",
+    "Pasted image 20250524165007.png",
+    "Pasted image 20250524164603.png",
+    "Pasted image 20250524163750.png",
+    "Pasted image 20250524163702.png",
+    "Pasted image 20250524162244.png",
+    "Pasted image 20250524160959.png",
+    "instalacao-debian.md",
     "Ferramentas para Melhorar Habilidades.md",
+    "image17.md",
+    "guia-dev.md",
     "Guia de instalação de um servidor Debian.md",
     "2024-Tutorial de instalação de servidor Debian - Gabriel Alves.md",
     "image1.md",
