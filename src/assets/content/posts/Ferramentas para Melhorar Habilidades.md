@@ -1,7 +1,7 @@
 ---
 title: Ferramentas para Melhorar Habilidades
 date: 2024-08-27
-description: Três ferramentas essenciais para aprimorar habilidades profissionais e pessoais, recomendadas por Gabriel Alves.
+description: Três ferramentas essenciais para aprimorar habilidades profissionais e pessoais.
 ---
 
 ## 3 ferramentas para melhorar diariamente suas habilidades — sendo você um dev ou não
