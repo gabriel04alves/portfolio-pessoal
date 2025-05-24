@@ -7,6 +7,8 @@
   --color-accent: #2a7ae4;
   --color-image-background: #fff;
   --color-footer-background: #272727;
+  --color-highlight: #fdfdfd;
+  --color-highlight-reverse: #272727;
 }
 
 .day-theme {
@@ -18,4 +20,6 @@
   --color-accent: #2a7ae4;
   --color-image-background: #fff;
   --color-footer-background: #fdfdfd;
+  --color-highlight: #272727;
+  --color-highlight-reverse: #000000;
 }

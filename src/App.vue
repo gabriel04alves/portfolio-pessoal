@@ -9,6 +9,7 @@
 <script>
 import { RouterView } from 'vue-router'
 import { useI18n } from "./locales/i18n";
+import 'github-markdown-css/github-markdown.css';
 
 export default {
   components: {
